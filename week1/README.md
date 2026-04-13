@@ -8,3 +8,5 @@ This is my first Python project for Week 1. It contains a simple Python script t
 
 ## Environment Setup and Result
 Below is a screenshot of my current Jupyter Lab environment, showing the successful execution of the code:
+
+![alt text](screenshot.png)
