@@ -1,57 +1,55 @@
-import math
+# Global variable to store student objects
+student_list = []
 
-class Operations:
 
-    def Sum(self,a,b): 
-     print(f"The sum of the numbers {a} and {b} is: {a+b} ")
+class Student:
 
-    def Minus(self,a,b):
-        print(f"The Difference of the {a} and {b} is: {a-b} ")
+    # Function to set student data
+    def set_data(self, name, age, student_id):
+        self.name = name
+        self.age = age
+        self.student_id = student_id
 
-    def Multiply(self,a,b):
-        print(f"The Multiplication of the {a} and {b} is: {a*b} ")    
+    # Function to display student info
+    def display_info(self):
+        return f"Name: {self.name}, Age: {self.name}"
 
-    def Factorial(self,n):
-       result= math.factorial(n)
-       print(f"The factorial of {n} is: {result}")
 
-def UserInput():
-    x = int(input("Enter first value: "))
-    y = int(input("Enter second value: "))
-    return x, y
+# Function to collect student data
+def collect_students():
+    print("Enter details for at least 3 students:\n")
 
-def Funcswitch(obj): #we can write the nickname here 
-     while True:    #if this function was method, we use self as an arguments
-      print("\n:---Calculator List:-----\n")
-      print("1. Sum")
-      print("2. Minus")
-      print("3. Multiplication")
-      print("4. Factorial")
-      print("5. Exit\n")
-      choice=int(input("Enter your choice:\n"))
-      if choice==1:
-          a,b=UserInput()
-          obj.Sum(a,b)
-      
-      elif choice==2:
-          a,b=UserInput()
-          obj.Minus(a,b)
-  
-      elif choice==3:
-          a,b=UserInput()
-          obj.Multiply(a,b)
-   
-      elif choice==4:
-          n=int(input("Enter the number to do factorial:\n"))
-          obj.Factorial(n)
-  
-      elif choice==5:
-          break    
-      
-      else:
-          print("--ERROR: Invalid Choice")
-      
-              
-obj= Operations()
-#obj.Funcinput() #if it is a Method, do this
-Funcswitch(obj)   #if it is a Function, do this
+    for i in range(3):
+        print(f"Student {i+1}")
+
+        # Local variables
+        name = input("Enter student name: ")
+        age = int(input("Enter student age: "))
+        student_id = input("Enter student ID: ")
+
+        student = Student()
+
+        # Set data using class function
+        student.set_data(name, age, student_id)
+
+        # Add student to global list
+        student_list.append(student)
+
+        print()
+
+
+# Function to display students in order
+def display_students():
+    print("\nList of Students (Names and Ages):")
+
+    # Sort students by name
+    sorted_students = sorted(student_list, key=lambda s: s.age)
+
+    for student in sorted_students:
+        print(student.display_info())
+
+
+# Standard Python entry point as main function
+if __name__ == "__main__":
+    collect_students()
+    display_students()

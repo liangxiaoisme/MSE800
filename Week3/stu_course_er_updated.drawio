@@ -1,0 +1,123 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Student-Course-Lecturer ER" id="fwNlAgDvCeeYRHubRhV6">
+    <mxGraphModel dx="1500" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Student Entity -->
+        <mxCell id="student-entity" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Student" vertex="1">
+          <mxGeometry height="50" width="100" x="80" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="student-id" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="student_id (PK)" vertex="1">
+          <mxGeometry height="40" width="90" x="40" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="student-name" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="name" vertex="1">
+          <mxGeometry height="40" width="80" x="150" y="180" as="geometry" />
+        </mxCell>
+        
+        <!-- Course Entity -->
+        <mxCell id="course-entity" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Course" vertex="1">
+          <mxGeometry height="50" width="100" x="420" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="course-id" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="course_id (PK)" vertex="1">
+          <mxGeometry height="40" width="90" x="380" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="course-name" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="course_name" vertex="1">
+          <mxGeometry height="40" width="90" x="500" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="course-credits" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="credits" vertex="1">
+          <mxGeometry height="40" width="80" x="370" y="380" as="geometry" />
+        </mxCell>
+        
+        <!-- Lecturer Entity (NEW) -->
+        <mxCell id="lecturer-entity" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Lecturer" vertex="1">
+          <mxGeometry height="50" width="100" x="760" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="lecturer-id" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="lecturer_id (PK)" vertex="1">
+          <mxGeometry height="40" width="90" x="720" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="lecturer-name" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="lecturer_name" vertex="1">
+          <mxGeometry height="40" width="90" x="830" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="lecturer-email" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="email" vertex="1">
+          <mxGeometry height="40" width="80" x="720" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="lecturer-phone" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="phone" vertex="1">
+          <mxGeometry height="40" width="80" x="830" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="lecturer-dept" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="department" vertex="1">
+          <mxGeometry height="40" width="90" x="920" y="280" as="geometry" />
+        </mxCell>
+        
+        <!-- Enrollment Relationship -->
+        <mxCell id="enrollment-rel" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Enrollment" vertex="1">
+          <mxGeometry height="60" width="100" x="240" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="enrollment-score" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="score" vertex="1">
+          <mxGeometry height="40" width="80" x="250" y="380" as="geometry" />
+        </mxCell>
+        
+        <!-- Teaches Relationship -->
+        <mxCell id="teaches-rel" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Teaches" vertex="1">
+          <mxGeometry height="60" width="100" x="590" y="275" as="geometry" />
+        </mxCell>
+        
+        <!-- Edges for Student -->
+        <mxCell id="edge-student-id" edge="1" parent="1" source="student-entity" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="student-id">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-student-name" edge="1" parent="1" source="student-entity" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="student-name">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Edges for Course -->
+        <mxCell id="edge-course-id" edge="1" parent="1" source="course-entity" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="course-id">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-course-name" edge="1" parent="1" source="course-entity" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="course-name">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-course-credits" edge="1" parent="1" source="course-entity" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="course-credits">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Edges for Lecturer -->
+        <mxCell id="edge-lecturer-id" edge="1" parent="1" source="lecturer-entity" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="lecturer-id">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-lecturer-name" edge="1" parent="1" source="lecturer-entity" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="lecturer-name">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-lecturer-email" edge="1" parent="1" source="lecturer-entity" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lecturer-email">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-lecturer-phone" edge="1" parent="1" source="lecturer-entity" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lecturer-phone">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-lecturer-dept" edge="1" parent="1" source="lecturer-entity" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="lecturer-dept">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Relationships -->
+        <mxCell id="edge-student-enrollment" edge="1" parent="1" source="student-entity" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="enrollment-rel">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-enrollment-course" edge="1" parent="1" source="enrollment-rel" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="course-entity">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-enrollment-score" edge="1" parent="1" source="enrollment-rel" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="enrollment-score">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Course-Lecturer Relationship -->
+        <mxCell id="edge-course-teaches" edge="1" parent="1" source="course-entity" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="teaches-rel">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-teaches-lecturer" edge="1" parent="1" source="teaches-rel" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="lecturer-entity">
+          <mxGeometry height="50" relative="1" width="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
