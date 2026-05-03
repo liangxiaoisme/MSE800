@@ -33,3 +33,20 @@ One transaction can incur multiple fees. `Transaction_id` is stored as a FK in t
 ## Conclusion
 
 This design avoids redundancy by placing foreign keys on the "Many" side of every relationship, keeping the schema clean, auditable, and easy to extend.
+
+## Currency Conversion Program
+
+A new SQLite-backed currency conversion script is available in `main.py`. It implements the database design from the image and supports:
+
+- customer and account management
+- fiat currency definitions
+- real-time conversion using stored exchange rates
+- transaction and exchange history tracking
+
+### Run the program
+
+```bash
+python main.py
+```
+
+The program will initialize the database if needed and seed a demo customer with USD/EUR accounts.
