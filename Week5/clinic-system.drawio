@@ -1,0 +1,166 @@
+<mxfile host="app.diagrams.net" agent="ClinicSystemDesigner">
+  <diagram name="Clinic System Class Diagram" id="clinic-class-diagram">
+    <mxGraphModel dx="1425" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="patient" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d5e8d4;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#82b366;fontSize=14;fontFamily=Helvetica;" value="Patient" vertex="1">
+          <mxGeometry height="200" width="200" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="patient-attrs" parent="patient" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Helvetica;" value="- patientId: String&#xa;- name: String&#xa;- email: String&#xa;- phone: String" vertex="1">
+          <mxGeometry height="74" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="patient-sep" parent="patient" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#82b366;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="patient-methods" parent="patient" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Helvetica;" value="+ register(): void&#xa;+ login(): void&#xa;+ requestAppointment(): void&#xa;+ requestMedication(): void" vertex="1">
+          <mxGeometry height="92" width="200" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="appointment" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#6c8ebf;fontSize=14;fontFamily=Helvetica;" value="Appointment" vertex="1">
+          <mxGeometry height="200" width="200" x="400" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="appointment-attrs" parent="appointment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Helvetica;" value="- appointmentId: String&#xa;- date: Date&#xa;- time: String&#xa;- doctorName: String&#xa;- status: String" vertex="1">
+          <mxGeometry height="88" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="appointment-sep" parent="appointment" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#6c8ebf;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="114" as="geometry" />
+        </mxCell>
+        <mxCell id="appointment-methods" parent="appointment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Helvetica;" value="+ checkAvailability(): bool&#xa;+ reserveSlot(): void&#xa;+ confirmAppointment(): void&#xa;+ cancelAppointment(): void" vertex="1">
+          <mxGeometry height="78" width="200" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="payment" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#fff2cc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#d6b656;fontSize=14;fontFamily=Helvetica;" value="Payment" vertex="1">
+          <mxGeometry height="180" width="200" x="720" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="payment-attrs" parent="payment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Helvetica;" value="- paymentId: String&#xa;- amount: float&#xa;- paymentType: String&#xa;- status: String" vertex="1">
+          <mxGeometry height="74" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="payment-sep" parent="payment" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#d6b656;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="payment-methods" parent="payment" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Helvetica;" value="+ calculateFee(): float&#xa;+ processPayment(): bool&#xa;+ issueReceipt(): String" vertex="1">
+          <mxGeometry height="72" width="200" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="medorder" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#f8cecc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#b85450;fontSize=14;fontFamily=Helvetica;" value="MedicationOrder" vertex="1">
+          <mxGeometry height="160" width="200" x="400" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="medorder-attrs" parent="medorder" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Helvetica;" value="- orderId: String&#xa;- orderDate: Date&#xa;- status: String" vertex="1">
+          <mxGeometry height="54" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="medorder-sep" parent="medorder" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#b85450;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="medorder-methods" parent="medorder" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Helvetica;" value="+ placeOrder(): void&#xa;+ validatePrescription(): bool&#xa;+ confirmOrder(): void" vertex="1">
+          <mxGeometry height="52" width="200" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="prescription" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e1d5e7;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#9673a6;fontSize=14;fontFamily=Helvetica;" value="Prescription" vertex="1">
+          <mxGeometry height="130" width="200" x="80" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="prescription-attrs" parent="prescription" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Helvetica;" value="- prescriptionId: String&#xa;- medications: List&amp;lt;String&amp;gt;&#xa;- validUntil: Date" vertex="1">
+          <mxGeometry height="54" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="prescription-sep" parent="prescription" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#9673a6;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="prescription-methods" parent="prescription" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Helvetica;" value="+ validate(): bool" vertex="1">
+          <mxGeometry height="22" width="200" y="88" as="geometry" />
+        </mxCell>
+        <mxCell id="pharmacy" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e8f4f8;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#5a9eb5;fontSize=14;fontFamily=Helvetica;" value="Pharmacy" vertex="1">
+          <mxGeometry height="120" width="200" x="720" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="pharmacy-attrs" parent="pharmacy" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Helvetica;" value="- pharmacyId: String&#xa;- name: String" vertex="1">
+          <mxGeometry height="34" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="pharmacy-sep" parent="pharmacy" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#5a9eb5;" value="" vertex="1">
+          <mxGeometry height="8" width="200" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pharmacy-methods" parent="pharmacy" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;fontFamily=Helvetica;" value="+ dispatchMedication(order): bool" vertex="1">
+          <mxGeometry height="30" width="200" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-pa" edge="1" parent="1" source="patient" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;endFill=0;strokeWidth=2;strokeColor=#666666;fontSize=12;fontFamily=Helvetica;labelBackgroundColor=#ffffff;" target="appointment" value="books">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="150" as="sourcePoint" />
+            <mxPoint x="400" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-pa-mult1" connectable="0" parent="rel-pa" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=top;fontSize=11;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.9" y="-8" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-pa-mult2" connectable="0" parent="rel-pa" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=top;fontSize=11;fontFamily=Helvetica;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.9" y="-8" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-pmo" edge="1" parent="1" source="patient" style="endArrow=open;html=1;endSize=12;startArrow=none;startFill=0;endFill=0;strokeWidth=2;strokeColor=#666666;fontSize=12;fontFamily=Helvetica;labelBackgroundColor=#ffffff;" target="medorder" value="places">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="330" />
+            </Array>
+            <mxPoint x="180" y="260" as="sourcePoint" />
+            <mxPoint x="400" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-pmo-mult1" connectable="0" parent="rel-pmo" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=top;fontSize=11;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.85" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-pmo-mult2" connectable="0" parent="rel-pmo" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=top;fontSize=11;fontFamily=Helvetica;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.85" y="-10" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-app" edge="1" parent="1" source="appointment" style="endArrow=open;html=1;endSize=12;startArrow=none;startFill=0;endFill=0;strokeWidth=2;strokeColor=#666666;fontSize=12;fontFamily=Helvetica;labelBackgroundColor=#ffffff;" target="payment" value="booking fee">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="150" as="sourcePoint" />
+            <mxPoint x="720" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-app-mult1" connectable="0" parent="rel-app" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=bottom;fontSize=11;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.9" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-app-mult2" connectable="0" parent="rel-app" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=bottom;fontSize=11;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.9" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-mpay" edge="1" parent="1" source="medorder" style="endArrow=open;html=1;endSize=12;startArrow=none;startFill=0;endFill=0;strokeWidth=2;strokeColor=#666666;fontSize=12;fontFamily=Helvetica;labelBackgroundColor=#ffffff;" target="payment" value="medication cost">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="420" />
+              <mxPoint x="820" y="420" />
+              <mxPoint x="820" y="240" />
+              <mxPoint x="820" y="270" />
+            </Array>
+            <mxPoint x="820" y="420" as="sourcePoint" />
+            <mxPoint x="820" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-mpay-mult1" connectable="0" parent="rel-mpay" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=bottom;fontSize=11;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.8" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-mpay-mult2" connectable="0" parent="rel-mpay" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=bottom;fontSize=11;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.85" y="5" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-mpr" edge="1" parent="1" source="medorder" style="endArrow=open;html=1;endSize=12;startArrow=none;startFill=0;endFill=0;strokeWidth=2;strokeColor=#666666;fontSize=12;fontFamily=Helvetica;labelBackgroundColor=#ffffff;" target="prescription" value="requires">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="420" as="sourcePoint" />
+            <mxPoint x="280" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-mpr-mult1" connectable="0" parent="rel-mpr" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=top;fontSize=11;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.9" y="-8" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-mpr-mult2" connectable="0" parent="rel-mpr" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=top;fontSize=11;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.9" y="-8" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-mph" edge="1" parent="1" source="medorder" style="endArrow=open;html=1;endSize=12;startArrow=none;startFill=0;endFill=0;strokeWidth=2;strokeColor=#666666;fontSize=12;fontFamily=Helvetica;labelBackgroundColor=#ffffff;" target="pharmacy" value="fulfilled by">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="420" as="sourcePoint" />
+            <mxPoint x="720" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel-mph-mult1" connectable="0" parent="rel-mph" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=top;fontSize=11;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.9" y="-8" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-mph-mult2" connectable="0" parent="rel-mph" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=top;fontSize=11;fontFamily=Helvetica;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.9" y="-8" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontFamily=Helvetica;" value="Clinic System — UML Class Diagram&#xa;(Appointment Booking, Payment &amp;amp; Medication Order)" vertex="1">
+          <mxGeometry height="40" width="500" x="250" y="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
