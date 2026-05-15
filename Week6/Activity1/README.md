@@ -1,31 +1,24 @@
-## 装饰器在项目中的作用
+## 1. How the Decorator Is Used
 
-- 使用 `@decorator_name` 语法把装饰器应用到函数上。
-- 装饰器本质上是一个接收函数并返回新函数的高阶函数。
-- 通过装饰器，可以在不修改原函数内容的情况下添加日志、调试、参数检查、计时等功能。
+- The decorator is defined in `decorator.py` as a function that takes another function and returns a wrapper function.
+- In `users.py`, the decorator is applied with `@my_decorator` above business functions.
+- When the module is imported, the decorator wraps the original function, replacing it with the wrapper.
+- Calls from `main.py` go through the wrapper first, then execute the original function and return its result.
 
-## 每个函数的调试说明
+## 2. Debugging Process
 
-- `def my_decorator(func):`
-  - 定义装饰器，`func` 是被包装的原函数。
-- `def wrapper(*args, **kwargs):`
-  - 内部包装函数，接收原函数的所有参数。
-- `result = func(*args, **kwargs)`
-  - 调用原函数并保存返回值。
-- `return result`
-  - 将原函数结果返回给调用者，避免装饰后丢失返回值。
-- `@my_decorator`
-  - 应用装饰器，将目标函数替换成包装函数。
-- `def target_function(...):`
-  - 被装饰的函数，保留原始功能。
+- Check `decorator.py` to confirm the decorator returns the wrapper function.
+- Verify the wrapper accepts `*args` and `**kwargs`, and forwards them to the original function.
+- Ensure the wrapper calls the original function and stores its result.
+- Confirm the wrapper returns that result so the decorated function behaves like the original.
+- Run the program from `main.py` and observe the output to verify the decorator logic is executed.
 
-## 调试过程
+## 3. Findings
 
-- 检查装饰器是否返回 `wrapper`。
-- 检查 `wrapper` 是否接收 `*args, **kwargs` 并传递给原函数。
-- 确认 `wrapper` 内调用原函数后有 `return`。
-- 运行示例调用，观察输出是否与预期一致。
-
-## 结论
-
-本项目的装饰器用法是通过包装函数在被装饰函数前后插入额外逻辑。调试重点在于确保包装函数正确转发参数和返回值。如果出现问题，通常是因为 `wrapper` 内漏写 `return`、没有调用原函数，或 `@decorator` 位置错误。
+- The decorator adds extra behavior around a function without modifying its core logic.
+- Splitting code into `decorator.py`, `users.py`, and `main.py` keeps responsibilities separate:
+  - `decorator.py` defines the wrapper logic.
+  - `users.py` defines application functions.
+  - `main.py` runs the program.
+- The main debugging focus is on correct parameter forwarding and returning values in the wrapper.
+- Common issues are missing `return` in the wrapper, not calling the original function, or incorrect decorator placement.
