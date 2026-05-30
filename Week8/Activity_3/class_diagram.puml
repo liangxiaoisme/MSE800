@@ -1,0 +1,44 @@
+@startuml
+' Week 8 - Activity 3
+' Air New Zealand Domestic Flight System - Single Inheritance
+' Import into draw.io:  Arrange -> Insert -> Advanced -> PlantUML  (paste this)
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+}
+
+' ---------------- PARENT / BASE CLASS ----------------
+class Flight {
+    + {static} airline : str = "Air New Zealand"
+    --
+    + flight_number : str
+    + origin : str
+    + destination : str
+    + capacity : int
+    + base_fare : float
+    + booked_seats : int
+    --
+    + book_seat() : bool
+    + available_seats() : int
+    + calculate_fare() : float
+    + get_flight_info() : str
+}
+
+' ---------------- CHILD / SUBCLASS ----------------
+class DomesticFlight {
+    + {static} GST_RATE : float = 0.15
+    --
+    + island : str
+    --
+    + calculate_fare() : float
+    + get_flight_info() : str
+    + is_short_haul() : bool
+}
+
+' ---------------- SINGLE INHERITANCE ----------------
+Flight <|-- DomesticFlight
+
+@enduml
