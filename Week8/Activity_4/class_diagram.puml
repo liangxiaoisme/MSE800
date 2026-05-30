@@ -1,0 +1,98 @@
+@startuml
+' Week 8 - Activity 4
+' Air New Zealand Flight Management System - HYBRID INHERITANCE
+' Type (Domestic / International) x Mode (Direct / Transit)
+' Import into draw.io: Arrange -> Insert -> Advanced -> PlantUML (paste this)
+
+skinparam classAttributeIconSize 0
+skinparam class {
+    BorderColor Black
+    ArrowColor Black
+}
+
+' ---------------- BASE CLASS ----------------
+class Flight #DAE8FC {
+    + flight_number
+    + departure
+    + destination
+    + carry_on_allowance
+    + checked_baggage_allowance
+    --
+    + show_route()
+    + show_baggage()
+    + show_summary()
+}
+
+' ---------------- Dimension 1: TYPE (inherit Flight) ----------------
+class DomesticFlight #D5E8D4 {
+    + flight_type()
+    + check_in_info()
+    + show_domestic_rule()
+}
+
+class InternationalFlight #FFE6CC {
+    + flight_type()
+    + check_visa()
+    + show_international_rule()
+}
+
+' ---------------- Dimension 2: MODE (mixins, no Flight base) ----------------
+class DirectFlight #E1D5E7 {
+    + flight_mode()
+    + show_stop_info()
+    + travel_note()
+}
+
+class TransitFlight #F8CECC {
+    + stopover
+    --
+    + flight_mode()
+    + show_stop_info()
+    + travel_note()
+}
+
+' ---------------- Combined: TYPE x MODE (multiple inheritance) ----------------
+class DomesticDirectFlight #D5E8D4 {
+    + show_details()
+    + show_full_trip()
+    + show_summary()
+}
+
+class DomesticTransitFlight #D5E8D4 {
+    + show_details()
+    + show_full_trip()
+    + show_summary()
+}
+
+class InternationalDirectFlight #FFE6CC {
+    + show_details()
+    + show_full_trip()
+    + show_summary()
+}
+
+class InternationalTransitFlight #FFE6CC {
+    + show_details()
+    + show_full_trip()
+    + show_summary()
+}
+
+' ---------------- Relationships (single-headed = inheritance) ----------------
+Flight <|-- DomesticFlight
+Flight <|-- InternationalFlight
+
+DomesticFlight      <|-- DomesticDirectFlight
+DirectFlight        <|-- DomesticDirectFlight
+DomesticFlight      <|-- DomesticTransitFlight
+TransitFlight       <|-- DomesticTransitFlight
+InternationalFlight <|-- InternationalDirectFlight
+DirectFlight        <|-- InternationalDirectFlight
+InternationalFlight <|-- InternationalTransitFlight
+TransitFlight       <|-- InternationalTransitFlight
+
+note bottom of DirectFlight
+  Hierarchical (Flight -> Domestic / International)
+  + Multiple (each combo <- a Type + a Mode)
+  = HYBRID INHERITANCE
+end note
+
+@enduml
