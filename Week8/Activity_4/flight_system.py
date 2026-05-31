@@ -1,26 +1,3 @@
-r"""
-Week 8 - Activity 4
-Hybrid Inheritance: Air New Zealand Flight Management System
-
-The design combines TWO independent dimensions:
-    Type:  Domestic   vs   International
-    Mode:  Direct     vs   Transit
-
-Inheritance map:
-
-                       Flight  (base)
-                      /        \
-            DomesticFlight   InternationalFlight      <- hierarchical
-                      \        /
-       DirectFlight / TransitFlight  (mixins, NOT a Flight)
-                      \        /
-   DomesticDirectFlight / DomesticTransitFlight /
-   InternationalDirectFlight / InternationalTransitFlight   <- multiple
-
-    hierarchical + multiple = HYBRID inheritance
-"""
-
-
 class Flight:
     """Base class - data & behaviour shared by every flight."""
 
