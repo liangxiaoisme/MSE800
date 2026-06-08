@@ -70,13 +70,25 @@ explicitly passing it around.
   [SmartLock] LK-003 @ Server Room — LOCKED
 ```
 
-## Run
+## Project Structure / 项目结构
+
+```
+Week7/Activity_3/
+├── main.py        Entry point — CLI menu and application logic
+├── devices.py     Device ABC + SmartSwitch, SmartCurtain, SmartLock
+├── factory.py     DeviceFactory with class registry (Factory Pattern)
+├── config.py      ConfigurationManager (Singleton Pattern)
+└── README.md      This file
+```
+
+## Run / 运行
 
 ```bash
-python smart_office.py
+python main.py
 ```
 
 No external dependencies — uses only Python standard library.
+无需外部依赖 — 仅使用 Python 标准库。
 
 ## Menu
 
