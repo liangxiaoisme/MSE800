@@ -34,6 +34,6 @@ class DeviceFactory:
 
 
 # Register the three concrete device types at module load time.
-DeviceFactory.register("switch", SmartSwitch)
-DeviceFactory.register("curtain", SmartCurtain)
-DeviceFactory.register("lock", SmartLock)
+DeviceFactory.register("Smart Switch", SmartSwitch)
+DeviceFactory.register("Smart Curtain", SmartCurtain)
+DeviceFactory.register("Smart Lock", SmartLock)

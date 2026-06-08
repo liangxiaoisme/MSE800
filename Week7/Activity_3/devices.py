@@ -14,7 +14,7 @@ class Device(ABC):
     def __init__(self, device_id, location):
         self.device_id = device_id
         self.location = location
-        self.power = "OFF"       # power state: ON / OFF
+        self.power = "OFF"
 
     @abstractmethod
     def device_type(self):
@@ -22,30 +22,30 @@ class Device(ABC):
 
     @abstractmethod
     def detail(self):
-        """Return the device-specific state string (e.g. 'ON', '60%', 'Locked')."""
+        """Return the device-specific state string for the Status column."""
 
-    def status(self):
-        """Full one-line status summary."""
-        return f"[{self.device_type()}] {self.device_id} @ {self.location} | Power: {self.power} | State: {self.detail()}"
-
-    def power_on(self):
+    def turn_on(self):
         self.power = "ON"
-        print(f"  {self.device_type()} {self.device_id} powered ON.")
+        print(f"  {self.device_type()} {self.device_id} turned ON.")
 
-    def power_off(self):
+    def turn_off(self):
         self.power = "OFF"
-        print(f"  {self.device_type()} {self.device_id} powered OFF.")
+        print(f"  {self.device_type()} {self.device_id} turned OFF.")
+
+    @abstractmethod
+    def adjust_setting(self):
+        """Prompt user to adjust the device-specific setting."""
 
 
 class SmartSwitch(Device):
-    """Smart light switch: ON / OFF / toggle."""
+    """Smart light switch."""
 
     def __init__(self, device_id, location):
         super().__init__(device_id, location)
         self._on = False
 
     def device_type(self):
-        return "SmartSwitch"
+        return "Smart Switch"
 
     def detail(self):
         return "ON" if self._on else "OFF"
@@ -53,15 +53,14 @@ class SmartSwitch(Device):
     def turn_on(self):
         self.power = "ON"
         self._on = True
-        print(f"  SmartSwitch {self.device_id} turned ON.")
+        print(f"  Smart Switch {self.device_id} turned ON.")
 
     def turn_off(self):
         self._on = False
-        if self.power == "ON":
-            pass  # keep power on if other sub-devices use it
-        print(f"  SmartSwitch {self.device_id} turned OFF.")
+        self.power = "OFF"
+        print(f"  Smart Switch {self.device_id} turned OFF.")
 
-    def toggle(self):
+    def adjust_setting(self):
         if self._on:
             self.turn_off()
         else:
@@ -69,44 +68,68 @@ class SmartSwitch(Device):
 
 
 class SmartCurtain(Device):
-    """Smart curtain: open level 0% (closed) to 100% (fully open)."""
+    """Smart curtain with percentage control."""
 
     def __init__(self, device_id, location):
         super().__init__(device_id, location)
-        self.open_level = 0     # 0 = fully closed, 100 = fully open
+        self.position = 0
 
     def device_type(self):
-        return "SmartCurtain"
+        return "Smart Curtain"
 
     def detail(self):
-        return f"{self.open_level}%"
+        return f"position = {self.position}%"
 
-    def set_level(self, percent):
-        """Set curtain to a specific openness percentage (0-100)."""
-        percent = max(0, min(100, percent))
-        self.open_level = percent
-        self.power = "ON" if percent > 0 else "OFF"
-        print(f"  SmartCurtain {self.device_id} set to {percent}%.")
+    def turn_on(self):
+        self.power = "ON"
+        print(f"  Smart Curtain {self.device_id} turned ON.")
+
+    def turn_off(self):
+        self.power = "OFF"
+        print(f"  Smart Curtain {self.device_id} turned OFF.")
+
+    def adjust_setting(self):
+        try:
+            val = int(input(f"  Enter curtain position (0-100): ").strip())
+            val = max(0, min(100, val))
+            self.position = val
+            self.power = "ON" if val > 0 else "OFF"
+            print(f"  Smart Curtain {self.device_id} set to {val}%.")
+        except ValueError:
+            print("  Invalid input.")
 
 
 class SmartLock(Device):
-    """Smart door lock: Locked / Unlocked."""
+    """Smart door lock."""
 
     def __init__(self, device_id, location):
         super().__init__(device_id, location)
-        self._locked = True     # default: locked for security
+        self._locked = True
 
     def device_type(self):
-        return "SmartLock"
+        return "Smart Lock"
 
     def detail(self):
         return "Locked" if self._locked else "Unlocked"
 
+    def turn_on(self):
+        self.lock()
+
+    def turn_off(self):
+        self.unlock()
+
     def lock(self):
         self._locked = True
         self.power = "ON"
-        print(f"  SmartLock {self.device_id} locked.")
+        print(f"  Smart Lock {self.device_id} locked.")
 
     def unlock(self):
         self._locked = False
-        print(f"  SmartLock {self.device_id} unlocked.")
+        self.power = "OFF"
+        print(f"  Smart Lock {self.device_id} unlocked.")
+
+    def adjust_setting(self):
+        if self._locked:
+            self.unlock()
+        else:
+            self.lock()
