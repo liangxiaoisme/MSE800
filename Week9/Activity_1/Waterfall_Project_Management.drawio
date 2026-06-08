@@ -1,230 +1,180 @@
-<mxfile host="app.diagrams.net">
-  <diagram name="Waterfall SDLC" id="waterfall-v5">
-    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1700" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
+<mxfile host="65bd71144e">
+    <diagram name="Waterfall SDLC" id="waterfall-v6">
+        <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1450" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry width="1100" height="1450" as="geometry"/>
+                </mxCell>
+                <mxCell id="hdr" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1e3a5f;strokeColor=none;" parent="1" vertex="1">
+                    <mxGeometry width="1100" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="title" value="Intelligent Healthcare Compliance &amp;amp; Safety Management System" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="8" width="1020" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="subtitle" value="Waterfall Project Management Methodology" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;fontColor=#94a3b8;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="1020" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="grp" value="Group W  ·  Abu Sufian  ·  Xiao Liang  ·  7 Weeks  ·  Healthcare Compliance &amp;amp; Safety" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#cbd5e1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="66" width="1020" height="20" as="geometry"/>
+                </mxCell>
 
-        <!-- BACKGROUND -->
-        <mxCell id="bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="0" y="0" width="1400" height="1700" as="geometry" />
-        </mxCell>
+                <!-- PHASE 1 -->
+                <mxCell id="p1" value="" style="rounded=10;arcSize=6;fillColor=#3b82f6;strokeColor=#2563eb;strokeWidth=2;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="125" width="740" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="p1_num" value="01" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=44;fontStyle=1;fontColor=#ffffff;opacity=25;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="135" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p1_title" value="Requirements Analysis" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=19;fontStyle=1;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="132" width="350" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="p1_time" value="Week 1" style="text;html=1;fillColor=#1d4ed8;align=center;verticalAlign=middle;rounded=6;fontSize=10;fontColor=#ffffff;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="165" width="55" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p1_desc" value="&amp;bull; Gather HIPAA &amp;amp; GDPR compliance needs, map to measurable features&lt;br&gt;&amp;bull; Define 10 safety-reporting requirements with incident severity categories&lt;br&gt;&amp;bull; Map user roles: Staff (training, reporting) vs Admin (management, review)&lt;br&gt;&amp;bull; Establish non-functional: JWT auth, CORS, HTTPS, responsive design&lt;br&gt;&amp;bull; Document SRS with acceptance criteria for all business metrics" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontColor=#dbeafe;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="190" width="700" height="65" as="geometry"/>
+                </mxCell>
 
-        <!-- ===== HEADER ===== -->
-        <mxCell id="hdr" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1e3a5f;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="0" y="0" width="1400" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="title" value="Intelligent Healthcare Compliance &amp;amp; Safety Management System" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=24;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="50" y="8" width="1300" height="36" as="geometry" />
-        </mxCell>
-        <mxCell id="subtitle" value="Waterfall Project Management Methodology" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=15;fontColor=#94a3b8;" vertex="1" parent="1">
-          <mxGeometry x="50" y="44" width="1300" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="grp" value="Group W  ·  Team Members: Abu Sufian &amp;nbsp; · &amp;nbsp; Xiao Liang  ·  Duration: 7 Weeks  ·  Domain: Healthcare Compliance &amp;amp; Safety" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=12;fontColor=#cbd5e1;" vertex="1" parent="1">
-          <mxGeometry x="50" y="72" width="1300" height="22" as="geometry" />
-        </mxCell>
+                <mxCell id="a12" value="" style="endArrow=block;endFill=1;endSize=12;html=1;strokeWidth=3;strokeColor=#64748b;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry"><mxPoint x="550" y="268" as="sourcePoint"/><mxPoint x="550" y="295" as="targetPoint"/></mxGeometry>
+                </mxCell>
 
-        <!-- ===== PHASE 1: Requirements Analysis (blue) ===== -->
-        <mxCell id="p1" value="" style="rounded=10;arcSize=6;fillColor=#3b82f6;strokeColor=#2563eb;strokeWidth=2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="140" width="1160" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="p1_num" value="01" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=48;fontStyle=1;fontColor=#ffffff;opacity=30;" vertex="1" parent="1">
-          <mxGeometry x="140" y="155" width="90" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="p1_title" value="Requirements Analysis" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=22;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="240" y="155" width="400" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="p1_time" value="Week 1" style="text;html=1;fillColor=#1d4ed8;align=center;verticalAlign=middle;rounded=6;fontSize=11;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="250" y="190" width="60" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="p1_desc" value="&amp;bull; Gather HIPAA &amp;amp; GDPR regulatory compliance needs and map to measurable system features&lt;br&gt;&amp;bull; Define 10 deliverable safety-reporting requirements with incident severity categories&lt;br&gt;&amp;bull; Map user roles &amp;amp; permissions: Staff (training, reporting) vs Admin (management, review)&lt;br&gt;&amp;bull; Establish non-functional requirements: JWT authentication, CORS, HTTPS, responsive design&lt;br&gt;&amp;bull; Document Software Requirements Specification (SRS) with acceptance criteria for all metrics" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#dbeafe;" vertex="1" parent="1">
-          <mxGeometry x="240" y="215" width="1010" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="p1_dl" value="Deliverable: Software Requirements Specification (SRS) + Role Permission Matrix" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="240" y="287" width="1010" height="16" as="geometry" />
-        </mxCell>
+                <!-- PHASE 2 -->
+                <mxCell id="p2" value="" style="rounded=10;arcSize=6;fillColor=#7c3aed;strokeColor=#6d28d9;strokeWidth=2;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="300" width="740" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2_num" value="02" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=44;fontStyle=1;fontColor=#ffffff;opacity=25;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="310" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2_title" value="System Design" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=19;fontStyle=1;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="307" width="350" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2_time" value="Week 2" style="text;html=1;fillColor=#6d28d9;align=center;verticalAlign=middle;rounded=6;fontSize=10;fontColor=#ffffff;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="340" width="55" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2_desc" value="&amp;bull; 3-tier B/S architecture: React SPA → Django REST API → PostgreSQL+pgvector&lt;br&gt;&amp;bull; OOP class hierarchy: 5 Django apps, User inheritance, Document-Chunk composition&lt;br&gt;&amp;bull; DB schema: 11 tables, pgvector VectorField(384), FK constraints, indexes&lt;br&gt;&amp;bull; API route design: 15+ REST endpoints with JWT chain &amp;amp; role-based permissions&lt;br&gt;&amp;bull; UI/UX wireframes: 6 screens (Login → Dashboard → Training → Compliance → Incidents → Chatbot)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontColor=#ede9fe;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="365" width="700" height="65" as="geometry"/>
+                </mxCell>
 
-        <!-- Arrow 1→2 -->
-        <mxCell id="a12" value="" style="endArrow=block;endFill=1;endSize=14;html=1;strokeWidth=3;strokeColor=#64748b;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="700" y="315" as="sourcePoint" />
-            <mxPoint x="700" y="345" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
+                <mxCell id="a23" value="" style="endArrow=block;endFill=1;endSize=12;html=1;strokeWidth=3;strokeColor=#64748b;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry"><mxPoint x="550" y="443" as="sourcePoint"/><mxPoint x="550" y="470" as="targetPoint"/></mxGeometry>
+                </mxCell>
 
-        <!-- ===== PHASE 2: System Design (purple) ===== -->
-        <mxCell id="p2" value="" style="rounded=10;arcSize=6;fillColor=#7c3aed;strokeColor=#6d28d9;strokeWidth=2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="350" width="1160" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="p2_num" value="02" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=48;fontStyle=1;fontColor=#ffffff;opacity=30;" vertex="1" parent="1">
-          <mxGeometry x="140" y="365" width="90" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="p2_title" value="System Design" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=22;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="240" y="365" width="400" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="p2_time" value="Week 2" style="text;html=1;fillColor=#6d28d9;align=center;verticalAlign=middle;rounded=6;fontSize=11;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="250" y="400" width="60" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="p2_desc" value="&amp;bull; Define 3-tier B/S architecture: React SPA → Django REST API → PostgreSQL+pgvector (Supabase)&lt;br&gt;&amp;bull; Design OOP class hierarchy: 5 Django apps, User inheritance (AbstractUser), Document-Chunk composition&lt;br&gt;&amp;bull; Design database schema: 11 tables, pgvector VectorField(384), FK constraints, performance indexes&lt;br&gt;&amp;bull; Design 15+ REST API endpoints with JWT authentication chain and role-based permission rules&lt;br&gt;&amp;bull; Create UI/UX wireframes for all 6 screens (Login → Dashboard → Training → Compliance → Incidents → Chatbot)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#ede9fe;" vertex="1" parent="1">
-          <mxGeometry x="240" y="425" width="1010" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="p2_dl" value="Deliverable: System Design Document (Architecture + ERD + Class Diagram + API Route Specification)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="240" y="497" width="1010" height="16" as="geometry" />
-        </mxCell>
+                <!-- PHASE 3 -->
+                <mxCell id="p3" value="" style="rounded=10;arcSize=6;fillColor=#0891b2;strokeColor=#0e7490;strokeWidth=2;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="475" width="740" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="p3_num" value="03" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=44;fontStyle=1;fontColor=#ffffff;opacity=25;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="485" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p3_title" value="Implementation &amp;amp; Development" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=19;fontStyle=1;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="482" width="400" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="p3_time" value="Weeks 3–4" style="text;html=1;fillColor=#0e7490;align=center;verticalAlign=middle;rounded=6;fontSize=10;fontColor=#ffffff;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="515" width="65" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p3_desc" value="&amp;bull; Scaffold Django 5 project (5 apps), DRF, SimpleJWT, PostgreSQL+pgvector, Gunicorn&lt;br&gt;&amp;bull; Build 15+ REST endpoints: auth → training CRUD → quiz grading → compliance status → incident workflow&lt;br&gt;&amp;bull; Build React 18 + Vite SPA: 6 screens, Axios JWT interceptor, sidebar nav, floating ChatWidget&lt;br&gt;&amp;bull; RAG pipeline: fastembed (bge-small-en, 384-dim) → pgvector L2Distance → OpenRouter Llama 4 Maverick&lt;br&gt;&amp;bull; Seed: 3 modules × 3 questions, 3 compliance requirements, 5 knowledge-base docs, 2 demo users" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontColor=#cffafe;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="540" width="700" height="65" as="geometry"/>
+                </mxCell>
 
-        <!-- Arrow 2→3 -->
-        <mxCell id="a23" value="" style="endArrow=block;endFill=1;endSize=14;html=1;strokeWidth=3;strokeColor=#64748b;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="700" y="525" as="sourcePoint" />
-            <mxPoint x="700" y="555" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
+                <mxCell id="a34" value="" style="endArrow=block;endFill=1;endSize=12;html=1;strokeWidth=3;strokeColor=#64748b;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry"><mxPoint x="550" y="618" as="sourcePoint"/><mxPoint x="550" y="645" as="targetPoint"/></mxGeometry>
+                </mxCell>
 
-        <!-- ===== PHASE 3: Implementation (cyan) ===== -->
-        <mxCell id="p3" value="" style="rounded=10;arcSize=6;fillColor=#0891b2;strokeColor=#0e7490;strokeWidth=2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="560" width="1160" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="p3_num" value="03" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=48;fontStyle=1;fontColor=#ffffff;opacity=30;" vertex="1" parent="1">
-          <mxGeometry x="140" y="575" width="90" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="p3_title" value="Implementation &amp;amp; Development" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=22;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="240" y="575" width="400" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="p3_time" value="Weeks 3–4" style="text;html=1;fillColor=#0e7490;align=center;verticalAlign=middle;rounded=6;fontSize=11;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="250" y="610" width="70" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="p3_desc" value="&amp;bull; Scaffold Django 5 project (5 apps: accounts, training, compliance, incidents, chatbot), DRF, SimpleJWT, pgvector&lt;br&gt;&amp;bull; Build 15+ REST API endpoints: JWT auth → training CRUD → quiz grading engine → compliance status engine → incident workflow&lt;br&gt;&amp;bull; Build React 18 + Vite SPA: 6 screens, Axios JWT interceptor, sidebar navigation, floating ChatWidget component&lt;br&gt;&amp;bull; Implement RAG chatbot pipeline: fastembed (bge-small-en, 384-dim) → pgvector L2Distance retrieval → OpenRouter Llama 4 Maverick&lt;br&gt;&amp;bull; Seed database: 3 training modules × 3 questions, 3 compliance requirements, 5 knowledge-base documents, 2 demo users" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#cffafe;" vertex="1" parent="1">
-          <mxGeometry x="240" y="635" width="1010" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="p3_dl" value="Deliverable: Fully Functional Source Code + RAG Pipeline Operational + Seed Data Fixtures" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="240" y="707" width="1010" height="16" as="geometry" />
-        </mxCell>
+                <!-- PHASE 4 -->
+                <mxCell id="p4" value="" style="rounded=10;arcSize=6;fillColor=#ea580c;strokeColor=#c2410c;strokeWidth=2;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="650" width="740" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_num" value="04" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=44;fontStyle=1;fontColor=#ffffff;opacity=25;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="660" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_title" value="Testing &amp;amp; Validation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=19;fontStyle=1;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="657" width="350" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_time" value="Week 5" style="text;html=1;fillColor=#9a3412;align=center;verticalAlign=middle;rounded=6;fontSize=10;fontColor=#ffffff;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="690" width="55" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4_desc" value="&amp;bull; Unit testing: Django test cases for all API endpoints (auth, CRUD, quiz, compliance)&lt;br&gt;&amp;bull; Integration testing: React ↔ Django ↔ PostgreSQL full-stack data-flow validation&lt;br&gt;&amp;bull; Security testing: JWT expiry, role guard, CORS origin validation, SQL injection prevention&lt;br&gt;&amp;bull; RAG accuracy: top-5 relevance scoring, source-citation verification across 10 sample questions&lt;br&gt;&amp;bull; UAT: walk all 10 business metrics; cross-browser &amp;amp; responsive (Chrome, Firefox, Edge)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontColor=#fef3c7;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="715" width="700" height="65" as="geometry"/>
+                </mxCell>
 
-        <!-- Arrow 3→4 -->
-        <mxCell id="a34" value="" style="endArrow=block;endFill=1;endSize=14;html=1;strokeWidth=3;strokeColor=#64748b;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="700" y="735" as="sourcePoint" />
-            <mxPoint x="700" y="765" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
+                <mxCell id="a45" value="" style="endArrow=block;endFill=1;endSize=12;html=1;strokeWidth=3;strokeColor=#64748b;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry"><mxPoint x="550" y="793" as="sourcePoint"/><mxPoint x="550" y="820" as="targetPoint"/></mxGeometry>
+                </mxCell>
 
-        <!-- ===== PHASE 4: Testing (orange) ===== -->
-        <mxCell id="p4" value="" style="rounded=10;arcSize=6;fillColor=#ea580c;strokeColor=#c2410c;strokeWidth=2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="770" width="1160" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="p4_num" value="04" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=48;fontStyle=1;fontColor=#ffffff;opacity=30;" vertex="1" parent="1">
-          <mxGeometry x="140" y="785" width="90" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="p4_title" value="Testing &amp;amp; Validation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=22;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="240" y="785" width="400" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="p4_time" value="Week 5" style="text;html=1;fillColor=#9a3412;align=center;verticalAlign=middle;rounded=6;fontSize=11;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="250" y="820" width="60" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="p4_desc" value="&amp;bull; Unit testing: Django test cases for all API endpoints (auth, CRUD, quiz grading, compliance computation)&lt;br&gt;&amp;bull; Integration testing: React ↔ Django ↔ PostgreSQL full-stack data-flow validation across all 5 modules&lt;br&gt;&amp;bull; Security &amp;amp; permission testing: JWT expiry, role-based route protection, CORS origin validation, SQL injection prevention&lt;br&gt;&amp;bull; RAG retrieval accuracy evaluation: top-5 relevance scoring, source-citation verification across 10 sample questions&lt;br&gt;&amp;bull; User Acceptance Testing (UAT): walk through all 10 business metrics; cross-browser (Chrome, Firefox, Edge) &amp;amp; responsive testing" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#fef3c7;" vertex="1" parent="1">
-          <mxGeometry x="240" y="845" width="1010" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="p4_dl" value="Deliverable: Test &amp;amp; QA Report (Unit + Integration + Security) + UAT Sign-off Document" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="240" y="917" width="1010" height="16" as="geometry" />
-        </mxCell>
+                <!-- PHASE 5 -->
+                <mxCell id="p5" value="" style="rounded=10;arcSize=6;fillColor=#dc2626;strokeColor=#b91c1c;strokeWidth=2;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="825" width="740" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_num" value="05" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=44;fontStyle=1;fontColor=#ffffff;opacity=25;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="835" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_title" value="Deployment &amp;amp; Go-Live" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=19;fontStyle=1;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="832" width="350" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_time" value="Week 6" style="text;html=1;fillColor=#991b1b;align=center;verticalAlign=middle;rounded=6;fontSize=10;fontColor=#ffffff;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="865" width="55" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5_desc" value="&amp;bull; Deploy Django to Render: Gunicorn, env vars (DATABASE_URL, SECRET_KEY, OPENROUTER_KEY)&lt;br&gt;&amp;bull; Deploy React to Vercel: VITE_API_URL, SPA rewrite rules, auto-deploy on Git push&lt;br&gt;&amp;bull; Provision Supabase PostgreSQL: pgvector extension, transaction-pooling (port 6543), 500MB tier&lt;br&gt;&amp;bull; Configure OpenRouter API key + run ingest_docs on Render production instance&lt;br&gt;&amp;bull; Cold-start UX: frontend warm-up → &amp;quot;Waking server…&amp;quot; → retry; smoke test all endpoints" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontColor=#fee2e2;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="890" width="700" height="65" as="geometry"/>
+                </mxCell>
 
-        <!-- Arrow 4→5 -->
-        <mxCell id="a45" value="" style="endArrow=block;endFill=1;endSize=14;html=1;strokeWidth=3;strokeColor=#64748b;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="700" y="945" as="sourcePoint" />
-            <mxPoint x="700" y="975" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
+                <mxCell id="a56" value="" style="endArrow=block;endFill=1;endSize=12;html=1;strokeWidth=3;strokeColor=#64748b;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry"><mxPoint x="550" y="968" as="sourcePoint"/><mxPoint x="550" y="995" as="targetPoint"/></mxGeometry>
+                </mxCell>
 
-        <!-- ===== PHASE 5: Deployment (red) ===== -->
-        <mxCell id="p5" value="" style="rounded=10;arcSize=6;fillColor=#dc2626;strokeColor=#b91c1c;strokeWidth=2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="980" width="1160" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="p5_num" value="05" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=48;fontStyle=1;fontColor=#ffffff;opacity=30;" vertex="1" parent="1">
-          <mxGeometry x="140" y="995" width="90" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="p5_title" value="Deployment &amp;amp; Go-Live" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=22;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="240" y="995" width="400" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="p5_time" value="Week 6" style="text;html=1;fillColor=#991b1b;align=center;verticalAlign=middle;rounded=6;fontSize=11;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="250" y="1030" width="60" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="p5_desc" value="&amp;bull; Deploy Django backend to Render: Gunicorn WSGI, environment variables, auto-migrate + seed_data on build&lt;br&gt;&amp;bull; Deploy React frontend to Vercel: VITE_API_URL env var, SPA rewrite rules, automatic deploy on Git push&lt;br&gt;&amp;bull; Provision Supabase PostgreSQL: enable pgvector extension, transaction-pooling connection (port 6543), 500MB free tier&lt;br&gt;&amp;bull; Configure OpenRouter API key on Render + run ingest_docs management command on production instance&lt;br&gt;&amp;bull; Handle Render cold-start UX: frontend warm-up request → loading indicator → auto-retry; smoke test all endpoints on production" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#fee2e2;" vertex="1" parent="1">
-          <mxGeometry x="240" y="1055" width="1010" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="p5_dl" value="Deliverable: Live System (Vercel + Render + Supabase) + Deployment &amp;amp; Operations Guide" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="240" y="1127" width="1010" height="16" as="geometry" />
-        </mxCell>
+                <!-- PHASE 6 -->
+                <mxCell id="p6" value="" style="rounded=10;arcSize=6;fillColor=#059669;strokeColor=#047857;strokeWidth=2;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="1000" width="740" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_num" value="06" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=44;fontStyle=1;fontColor=#ffffff;opacity=25;" parent="1" vertex="1">
+                    <mxGeometry x="190" y="1010" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_title" value="Maintenance &amp;amp; Support" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=19;fontStyle=1;fontColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="1007" width="350" height="28" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_time" value="Week 7" style="text;html=1;fillColor=#047857;align=center;verticalAlign=middle;rounded=6;fontSize=10;fontColor=#ffffff;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="1040" width="55" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6_desc" value="&amp;bull; Monitor Render runtime logs &amp;amp; Supabase database performance metrics&lt;br&gt;&amp;bull; Apply bug fixes &amp;amp; dependency security patches (Django, React, npm packages)&lt;br&gt;&amp;bull; RAG tuning: optimise chunk size/overlap, iterate prompt template for answer quality&lt;br&gt;&amp;bull; Track HIPAA/GDPR regulatory changes → update knowledge-base docs → re-run ingest_docs&lt;br&gt;&amp;bull; Periodic audits: user access reviews, API security scans, data integrity; SLA: 48-hr critical response" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=10;fontColor=#d1fae5;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="1065" width="700" height="65" as="geometry"/>
+                </mxCell>
 
-        <!-- Arrow 5→6 -->
-        <mxCell id="a56" value="" style="endArrow=block;endFill=1;endSize=14;html=1;strokeWidth=3;strokeColor=#64748b;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="700" y="1155" as="sourcePoint" />
-            <mxPoint x="700" y="1185" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
+                <!-- Arrow to principles -->
+                <mxCell id="a6p" value="" style="endArrow=block;endFill=1;endSize=12;html=1;strokeWidth=3;strokeColor=#64748b;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry"><mxPoint x="550" y="1143" as="sourcePoint"/><mxPoint x="550" y="1170" as="targetPoint"/></mxGeometry>
+                </mxCell>
 
-        <!-- ===== PHASE 6: Maintenance (green) ===== -->
-        <mxCell id="p6" value="" style="rounded=10;arcSize=6;fillColor=#059669;strokeColor=#047857;strokeWidth=2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="1190" width="1160" height="170" as="geometry" />
-        </mxCell>
-        <mxCell id="p6_num" value="06" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=48;fontStyle=1;fontColor=#ffffff;opacity=30;" vertex="1" parent="1">
-          <mxGeometry x="140" y="1205" width="90" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="p6_title" value="Maintenance &amp;amp; Support" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=22;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="240" y="1205" width="400" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="p6_time" value="Week 7" style="text;html=1;fillColor=#047857;align=center;verticalAlign=middle;rounded=6;fontSize=11;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="250" y="1240" width="60" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="p6_desc" value="&amp;bull; Monitor Render runtime logs &amp;amp; Supabase database performance metrics for anomalies and slow queries&lt;br&gt;&amp;bull; Apply bug fixes &amp;amp; dependency security patches: Django, React, Axios, Python packages, npm packages&lt;br&gt;&amp;bull; RAG model tuning: optimise chunk size/overlap parameters, iterate prompt template for improved answer quality&lt;br&gt;&amp;bull; Track regulatory changes: HIPAA/GDPR updates → revise knowledge-base documents → re-run ingest_docs&lt;br&gt;&amp;bull; Conduct periodic audits: user access reviews, API security scans, data-integrity verification; SLA: 48-hr critical response" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;fontSize=11;fontColor=#d1fae5;" vertex="1" parent="1">
-          <mxGeometry x="240" y="1265" width="1010" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="p6_dl" value="Deliverable: Support SLA Agreement + Maintenance Log (Bug Fixes, Model Updates, Regulatory Changes)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=10;fontColor=#ffffff;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="240" y="1337" width="1010" height="16" as="geometry" />
-        </mxCell>
+                <!-- KEY PRINCIPLES -->
+                <mxCell id="kp_bg" value="" style="rounded=8;arcSize=4;fillColor=#f1f5f9;strokeColor=#e2e8f0;strokeWidth=1;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="1175" width="740" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="kp_title" value="Key Principles of Waterfall" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=15;fontStyle=1;fontColor=#1e293b;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="1185" width="300" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="kp1" value="✓ Sequential, structured phases — each completes before the next begins" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;rounded=8;fontSize=10;fontColor=#1e293b;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="1218" width="340" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="kp2" value="✓ Comprehensive documentation at every stage" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;rounded=8;fontSize=10;fontColor=#1e293b;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="570" y="1218" width="320" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="kp3" value="✓ Clear deliverables &amp;amp; milestones defined per phase" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;rounded=8;fontSize=10;fontColor=#1e293b;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="1262" width="340" height="34" as="geometry"/>
+                </mxCell>
+                <mxCell id="kp4" value="✓ Ideal for regulated healthcare environments with fixed requirements" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;rounded=8;fontSize=10;fontColor=#1e293b;shadow=1;" parent="1" vertex="1">
+                    <mxGeometry x="570" y="1262" width="320" height="34" as="geometry"/>
+                </mxCell>
 
-        <!-- Arrow to Key Principles -->
-        <mxCell id="a6_kp" value="" style="endArrow=block;endFill=1;endSize=14;html=1;strokeWidth=3;strokeColor=#64748b;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="700" y="1365" as="sourcePoint" />
-            <mxPoint x="700" y="1395" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-
-        <!-- ===== KEY PRINCIPLES ===== -->
-        <mxCell id="kp_bg" value="" style="rounded=8;arcSize=4;fillColor=#f1f5f9;strokeColor=#e2e8f0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="1400" width="1160" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="kp_title" value="Key Principles of Waterfall" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#1e293b;" vertex="1" parent="1">
-          <mxGeometry x="150" y="1412" width="300" height="24" as="geometry" />
-        </mxCell>
-        <!-- Row 1: 3 principle cards -->
-        <mxCell id="kp1" value="✓ Sequential, structured phases — each completes before the next begins" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;rounded=8;fontSize=11;fontColor=#1e293b;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="150" y="1450" width="350" height="38" as="geometry" />
-        </mxCell>
-        <mxCell id="kp2" value="✓ Comprehensive documentation produced at every stage" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;rounded=8;fontSize=11;fontColor=#1e293b;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="525" y="1450" width="350" height="38" as="geometry" />
-        </mxCell>
-        <mxCell id="kp3" value="✓ Clear deliverables and milestones defined per phase" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;rounded=8;fontSize=11;fontColor=#1e293b;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="900" y="1450" width="350" height="38" as="geometry" />
-        </mxCell>
-        <!-- Row 2: 2 principle cards (centered) -->
-        <mxCell id="kp4" value="✓ Ideal for regulated environments where requirements are fixed upfront" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;rounded=8;fontSize=11;fontColor=#1e293b;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="270" y="1500" width="400" height="38" as="geometry" />
-        </mxCell>
-        <mxCell id="kp5" value="✓ Phase-gated delivery: no phase begins until the previous is complete" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=8;fontSize=11;fontColor=#1e293b;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="695" y="1500" width="400" height="38" as="geometry" />
-        </mxCell>
-
-        <!-- ===== FOOTER ===== -->
-        <mxCell id="ft_line" value="" style="line;strokeWidth=1;strokeColor=#cbd5e1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="1580" width="1160" height="2" as="geometry" />
-        </mxCell>
-        <mxCell id="ft_text" value="© Group W  ·  Waterfall SDLC Diagram  ·  Total Timeline: 7 Weeks  ·  2026" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=11;fontColor=#94a3b8;" vertex="1" parent="1">
-          <mxGeometry x="120" y="1586" width="1160" height="18" as="geometry" />
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+                <!-- FOOTER -->
+                <mxCell id="ft_line" value="" style="line;strokeWidth=1;strokeColor=#cbd5e1;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="1330" width="740" height="2" as="geometry"/>
+                </mxCell>
+                <mxCell id="ft_text" value="© Group W  ·  Waterfall SDLC Diagram  ·  7 Weeks  ·  2026" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=10;fontColor=#94a3b8;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="1336" width="740" height="16" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>
