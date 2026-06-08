@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install *)",
+      "Bash(curl -s -L \"https://raw.githubusercontent.com/mdasufian/MSE800-PSD/main/week%209/activity%201/Waterfall_Project_Management.drawio.pdf\" -o \"C:/Users/Administrator/Desktop/mdasufian_waterfall.pdf\")",
+      "Bash(python -c \"from PyPDF2 import PdfReader; r = PdfReader\\(r'C:/Users/Administrator/Desktop/mdasufian_waterfall.pdf'\\); [print\\(p.extract_text\\(\\) or '\\(no text\\)'\\) for p in r.pages]\")",
+      "Bash(python -c ' *)"
+    ]
+  }
+}
