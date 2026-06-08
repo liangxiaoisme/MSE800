@@ -1,302 +1,327 @@
 <mxfile host="app.diagrams.net">
-  <diagram name="Agile Scrum SDLC" id="agile-grpw">
-    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1600" math="0" shadow="0">
+  <diagram name="Agile Scrum SDLC" id="agile-grpw-v2">
+    <mxGraphModel dx="1600" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1500" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
 
         <!-- ==================== BACKGROUND ==================== -->
-        <mxCell id="bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="0" y="0" width="1800" height="1600" as="geometry" />
+        <mxCell id="bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fafbfc;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="2000" height="1500" as="geometry" />
         </mxCell>
 
         <!-- ==================== HEADER ==================== -->
-        <mxCell id="header_bar" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0f172a;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="0" y="0" width="1800" height="140" as="geometry" />
+        <mxCell id="header_bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#0c1929;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="0" y="0" width="2000" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="title" value="Intelligent Healthcare Compliance &amp; Safety Management System" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=28;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="100" y="15" width="1600" height="45" as="geometry" />
+        <mxCell id="title" value="Intelligent Healthcare Compliance &amp; Safety Management System" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="100" y="12" width="1800" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="subtitle" value="Agile Project Management &amp;mdash; Scrum Methodology &amp;bull; 3 Sprints" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontColor=#94a3b8;" vertex="1" parent="1">
-          <mxGeometry x="100" y="55" width="1600" height="30" as="geometry" />
+        <mxCell id="subtitle" value="Agile / Scrum Methodology &amp;nbsp · &amp;nbsp 3 Sprints × 2 Weeks + 1 Release Week = 7 Weeks Total" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontColor=#89b4fa;" vertex="1" parent="1">
+          <mxGeometry x="100" y="52" width="1800" height="28" as="geometry" />
         </mxCell>
-        <mxCell id="group_label" value="Group W" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#fbbf24;" vertex="1" parent="1">
-          <mxGeometry x="100" y="90" width="120" height="30" as="geometry" />
+        <mxCell id="header_group" value="Group W" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#fbbf24;" vertex="1" parent="1">
+          <mxGeometry x="100" y="85" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="members" value="Team Members: Abu Sufian &amp;nbsp · &amp;nbsp Xiao Liang" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontColor=#cbd5e1;" vertex="1" parent="1">
-          <mxGeometry x="230" y="90" width="400" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="meta" value="Duration: 6 Weeks&amp;nbsp · &amp;nbsp Methodology: Agile Scrum&amp;nbsp · &amp;nbsp Domain: Healthcare Compliance &amp; Safety" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontColor=#cbd5e1;" vertex="1" parent="1">
-          <mxGeometry x="650" y="90" width="700" height="30" as="geometry" />
+        <mxCell id="header_members" value="Team Members: Abu Sufian &amp;nbsp · &amp;nbsp Xiao Liang" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontColor=#bac2de;" vertex="1" parent="1">
+          <mxGeometry x="210" y="88" width="380" height="24" as="geometry" />
         </mxCell>
 
-        <!-- ==================== PRODUCT BACKLOG (left sidebar) ==================== -->
-        <mxCell id="backlog_box" value="" style="rounded=8;whiteSpace=wrap;html=1;fillColor=#fefce8;strokeColor=#eab308;strokeWidth=2;arcSize=6;" vertex="1" parent="1">
-          <mxGeometry x="40" y="180" width="240" height="360" as="geometry" />
-        </mxCell>
-        <mxCell id="bl_title" value="📋 Product Backlog" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#854d0e;" vertex="1" parent="1">
-          <mxGeometry x="50" y="190" width="220" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="bl_sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#eab308;" vertex="1" parent="1">
-          <mxGeometry x="55" y="225" width="210" height="2" as="geometry" />
-        </mxCell>
-        <mxCell id="bl_items" value="&amp;bull; User auth &amp;amp; role-based access&lt;br&gt;&amp;bull; Training module CRUD + quiz engine&lt;br&gt;&amp;bull; Compliance monitoring dashboard&lt;br&gt;&amp;bull; Incident reporting workflow&lt;br&gt;&amp;bull; RAG chatbot (Llama 4 + pgvector)&lt;br&gt;&amp;bull; Document ingestion pipeline&lt;br&gt;&amp;bull; React SPA + API integration&lt;br&gt;&amp;bull; Cloud deployment (Render/Vercel)&lt;br&gt;&amp;bull; UI polish &amp;amp; responsive layout&lt;br&gt;&amp;bull; Sprint review &amp;amp; retrospective docs" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#713f12;" vertex="1" parent="1">
-          <mxGeometry x="55" y="235" width="215" height="295" as="geometry" />
+        <!-- ==================== TIMELINE BAR ==================== -->
+        <mxCell id="timeline_label" value="PROJECT TIMELINE" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#5c6a7a;letterSpacing=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="155" width="160" height="20" as="geometry" />
         </mxCell>
 
-        <!-- ==================== SPRINT 1 (green) ==================== -->
-        <mxCell id="s1_box" value="" style="rounded=10;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#22c55e;strokeWidth=2;arcSize=6;" vertex="1" parent="1">
-          <mxGeometry x="320" y="180" width="450" height="360" as="geometry" />
+        <mxCell id="tl_s1_bg" value="" style="rounded=4;whiteSpace=wrap;html=1;fillColor=#22c55e;strokeColor=none;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="80" y="182" width="580" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="s1_badge" value="SPRINT 1" style="text;html=1;strokeColor=none;fillColor=#22c55e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=6;fontSize=13;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="340" y="192" width="80" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="s1_title" value="Foundation &amp; Backend APIs" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#166534;" vertex="1" parent="1">
-          <mxGeometry x="430" y="190" width="300" height="28" as="geometry" />
-        </mxCell>
-        <mxCell id="s1_timeline" value="Weeks 1 – 2" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#64748b;fontStyle=2;" vertex="1" parent="1">
-          <mxGeometry x="650" y="194" width="100" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="s1_sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#bbf7d0;" vertex="1" parent="1">
-          <mxGeometry x="340" y="230" width="410" height="2" as="geometry" />
-        </mxCell>
-        <!-- Sprint 1 sections -->
-        <mxCell id="s1_obj_label" value="🎯 Objective" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#166534;" vertex="1" parent="1">
-          <mxGeometry x="340" y="240" width="410" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="s1_obj" value="Scaffold the full-stack skeleton: Django project, PostgreSQL schema, JWT auth, and core REST APIs for training, compliance, and incidents." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#334155;" vertex="1" parent="1">
-          <mxGeometry x="340" y="262" width="410" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="s1_task_label" value="✅ Tasks" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#166534;" vertex="1" parent="1">
-          <mxGeometry x="340" y="298" width="410" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="s1_tasks" value="&amp;bull; Scaffold Django project + 5 apps (accounts, training, compliance, incidents, chatbot)&lt;br&gt;&amp;bull; Define 11 PostgreSQL models with pgvector extension&lt;br&gt;&amp;bull; Implement JWT auth (login, token refresh, role-based access)&lt;br&gt;&amp;bull; Build training API (module list/detail, enrollment, quiz submission)&lt;br&gt;&amp;bull; Build compliance API (requirements + on-read status computation)&lt;br&gt;&amp;bull; Build incidents API (staff create, admin update status)&lt;br&gt;&amp;bull; Seed database with demo data (3 modules, 3 requirements, 5 docs)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#334155;" vertex="1" parent="1">
-          <mxGeometry x="340" y="320" width="410" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="s1_deliv_label" value="📦 Deliverable" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#166534;" vertex="1" parent="1">
-          <mxGeometry x="340" y="436" width="410" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="s1_deliv" value="Working Django API server with all CRUD endpoints, seeded database, JWT auth flow verified via curl/Postman." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#334155;" vertex="1" parent="1">
-          <mxGeometry x="340" y="456" width="410" height="30" as="geometry" />
-        </mxCell>
-        <!-- Sprint 1 outcome + review -->
-        <mxCell id="s1_review_label" value="🔍 Sprint Review" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#166534;" vertex="1" parent="1">
-          <mxGeometry x="340" y="492" width="200" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="s1_review" value="All 7 API endpoints functional. DB schema validated. Demo: login → create enrollment → submit quiz → view compliance status." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#475569;" vertex="1" parent="1">
-          <mxGeometry x="340" y="512" width="410" height="24" as="geometry" />
+        <mxCell id="tl_s1_label" value="SPRINT 1 &amp;nbsp · &amp;nbsp Week 1 – 2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="80" y="184" width="580" height="28" as="geometry" />
         </mxCell>
 
-        <!-- Arrow Sprint 1 → Sprint 2 -->
-        <mxCell id="arrow_1_2" style="endArrow=block;endFill=1;endSize=12;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=2;strokeColor=#94a3b8;" edge="1" parent="1" source="s1_box" target="s2_box">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="tl_arrow1" value="" style="endArrow=block;endFill=1;endSize=6;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1;strokeColor=#94a3b8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="198" as="sourcePoint" />
+            <mxPoint x="670" y="198" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
 
-        <!-- ==================== SPRINT 2 (blue) ==================== -->
-        <mxCell id="s2_box" value="" style="rounded=10;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#3b82f6;strokeWidth=2;arcSize=6;" vertex="1" parent="1">
-          <mxGeometry x="320" y="620" width="450" height="360" as="geometry" />
+        <mxCell id="tl_s2_bg" value="" style="rounded=4;whiteSpace=wrap;html=1;fillColor=#3b82f6;strokeColor=none;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="670" y="182" width="580" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="s2_badge" value="SPRINT 2" style="text;html=1;strokeColor=none;fillColor=#3b82f6;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=6;fontSize=13;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="340" y="632" width="80" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="s2_title" value="Frontend + RAG Chatbot" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#1e40af;" vertex="1" parent="1">
-          <mxGeometry x="430" y="630" width="300" height="28" as="geometry" />
-        </mxCell>
-        <mxCell id="s2_timeline" value="Weeks 3 – 4" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#64748b;fontStyle=2;" vertex="1" parent="1">
-          <mxGeometry x="650" y="634" width="100" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="s2_sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#bfdbfe;" vertex="1" parent="1">
-          <mxGeometry x="340" y="670" width="410" height="2" as="geometry" />
-        </mxCell>
-        <mxCell id="s2_obj_label" value="🎯 Objective" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#1e40af;" vertex="1" parent="1">
-          <mxGeometry x="340" y="680" width="410" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="s2_obj" value="Build the React frontend (login, dashboard, training, compliance, incidents) and implement the RAG chatbot pipeline with OpenRouter." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#334155;" vertex="1" parent="1">
-          <mxGeometry x="340" y="702" width="410" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="s2_task_label" value="✅ Tasks" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#1e40af;" vertex="1" parent="1">
-          <mxGeometry x="340" y="738" width="410" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="s2_tasks" value="&amp;bull; Scaffold React + Vite project with React Router + Axios&lt;br&gt;&amp;bull; Implement JWT login page and AuthContext (token store + role guard)&lt;br&gt;&amp;bull; Build Dashboard (summary cards: modules, compliance, incidents)&lt;br&gt;&amp;bull; Build Training pages (list → detail → quiz → submit score)&lt;br&gt;&amp;bull; Build Compliance page (status list with color-coded badges)&lt;br&gt;&amp;bull; Build Incidents pages (list + report form + admin resolve button)&lt;br&gt;&amp;bull; Implement RAG ingestion (chunking + fastembed + pgvector store)&lt;br&gt;&amp;bull; Implement chatbot ask endpoint (retrieve → prompt → OpenRouter → fallback)&lt;br&gt;&amp;bull; Build floating ChatWidget component (slide-out panel, send/response)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#334155;" vertex="1" parent="1">
-          <mxGeometry x="340" y="760" width="410" height="135" as="geometry" />
-        </mxCell>
-        <mxCell id="s2_deliv_label" value="📦 Deliverable" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#1e40af;" vertex="1" parent="1">
-          <mxGeometry x="340" y="900" width="410" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="s2_deliv" value="Full-stack app running locally: React SPA ↔ Django API. RAG chatbot answers healthcare safety questions with source citations." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#334155;" vertex="1" parent="1">
-          <mxGeometry x="340" y="920" width="410" height="24" as="geometry" />
-        </mxCell>
-        <mxCell id="s2_review_label" value="🔍 Sprint Review" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#1e40af;" vertex="1" parent="1">
-          <mxGeometry x="340" y="948" width="200" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="s2_review" value="Full demo walkthrough: login → dashboard → training quiz → compliance check → incident report → chatbot Q&amp;amp;A. All integrations working." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#475569;" vertex="1" parent="1">
-          <mxGeometry x="340" y="968" width="410" height="24" as="geometry" />
+        <mxCell id="tl_s2_label" value="SPRINT 2 &amp;nbsp · &amp;nbsp Week 3 – 4" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="670" y="184" width="580" height="28" as="geometry" />
         </mxCell>
 
-        <!-- Arrow Sprint 2 → Sprint 3 -->
-        <mxCell id="arrow_2_3" style="endArrow=block;endFill=1;endSize=12;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=2;strokeColor=#94a3b8;" edge="1" parent="1" source="s2_box" target="s3_box">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="tl_arrow2" value="" style="endArrow=block;endFill=1;endSize=6;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1;strokeColor=#94a3b8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1250" y="198" as="sourcePoint" />
+            <mxPoint x="1260" y="198" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
 
-        <!-- ==================== SPRINT 3 (purple) ==================== -->
-        <mxCell id="s3_box" value="" style="rounded=10;whiteSpace=wrap;html=1;fillColor=#faf5ff;strokeColor=#8b5cf6;strokeWidth=2;arcSize=6;" vertex="1" parent="1">
-          <mxGeometry x="320" y="1060" width="450" height="310" as="geometry" />
+        <mxCell id="tl_s3_bg" value="" style="rounded=4;whiteSpace=wrap;html=1;fillColor=#8b5cf6;strokeColor=none;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="182" width="460" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="s3_badge" value="SPRINT 3" style="text;html=1;strokeColor=none;fillColor=#8b5cf6;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=6;fontSize=13;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
-          <mxGeometry x="340" y="1072" width="80" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="s3_title" value="Deployment &amp; Polish" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#6d28d9;" vertex="1" parent="1">
-          <mxGeometry x="430" y="1070" width="300" height="28" as="geometry" />
-        </mxCell>
-        <mxCell id="s3_timeline" value="Weeks 5 – 6" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#64748b;fontStyle=2;" vertex="1" parent="1">
-          <mxGeometry x="650" y="1074" width="100" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="s3_sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#e9d5ff;" vertex="1" parent="1">
-          <mxGeometry x="340" y="1110" width="410" height="2" as="geometry" />
-        </mxCell>
-        <mxCell id="s3_obj_label" value="🎯 Objective" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#6d28d9;" vertex="1" parent="1">
-          <mxGeometry x="340" y="1120" width="410" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="s3_obj" value="Deploy the platform live on free cloud services, polish the UI, test the complete user flow, and document the project." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#334155;" vertex="1" parent="1">
-          <mxGeometry x="340" y="1142" width="410" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="s3_task_label" value="✅ Tasks" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#6d28d9;" vertex="1" parent="1">
-          <mxGeometry x="340" y="1178" width="410" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="s3_tasks" value="&amp;bull; Deploy Django API to Render (Gunicorn, env vars, auto-migrate)&lt;br&gt;&amp;bull; Deploy React SPA to Vercel (env var VITE_API_URL, SPA rewrites)&lt;br&gt;&amp;bull; Provision Supabase PostgreSQL + enable pgvector extension&lt;br&gt;&amp;bull; Configure OpenRouter API key + run document ingestion on Render&lt;br&gt;&amp;bull; End-to-end user flow testing (login → train → compliance → incident → chat)&lt;br&gt;&amp;bull; UI polish: responsive layout, loading states, error handling" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#334155;" vertex="1" parent="1">
-          <mxGeometry x="340" y="1200" width="410" height="92" as="geometry" />
-        </mxCell>
-        <mxCell id="s3_deliv_label" value="📦 Deliverable" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#6d28d9;" vertex="1" parent="1">
-          <mxGeometry x="340" y="1300" width="410" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="s3_deliv" value="Live deployed system: public Vercel URL + Render API. Working chatbot. Project documentation complete." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#334155;" vertex="1" parent="1">
-          <mxGeometry x="340" y="1320" width="410" height="24" as="geometry" />
-        </mxCell>
-        <mxCell id="s3_review_label" value="🔍 Sprint Review" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#6d28d9;" vertex="1" parent="1">
-          <mxGeometry x="340" y="1348" width="200" height="22" as="geometry" />
-        </mxCell>
-        <mxCell id="s3_review" value="Live demo accessible via browser. Full user journey works. RAG chatbot returns sourced answers. Project ready for submission." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#475569;" vertex="1" parent="1">
-          <mxGeometry x="340" y="1368" width="410" height="24" as="geometry" />
+        <mxCell id="tl_s3_label" value="SPRINT 3 &amp;nbsp · &amp;nbsp Week 5 – 6" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1260" y="184" width="460" height="28" as="geometry" />
         </mxCell>
 
-        <!-- ==================== RIGHT COLUMN: Retrospectives ==================== -->
-        <mxCell id="retro_box" value="" style="rounded=10;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#f97316;strokeWidth=2;arcSize=6;" vertex="1" parent="1">
-          <mxGeometry x="840" y="180" width="340" height="1190" as="geometry" />
-        </mxCell>
-        <mxCell id="retro_title" value="🔄 Sprint Retrospectives" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#c2410c;" vertex="1" parent="1">
-          <mxGeometry x="850" y="192" width="320" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="retro_sep" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#fed7aa;" vertex="1" parent="1">
-          <mxGeometry x="855" y="230" width="310" height="2" as="geometry" />
+        <mxCell id="tl_arrow3" value="" style="endArrow=block;endFill=1;endSize=6;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=1;strokeColor=#94a3b8;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1720" y="198" as="sourcePoint" />
+            <mxPoint x="1730" y="198" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
 
-        <!-- Retro Sprint 1 -->
-        <mxCell id="r1_box" value="" style="rounded=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#fed7aa;strokeWidth=1;arcSize=4;" vertex="1" parent="1">
-          <mxGeometry x="855" y="250" width="315" height="280" as="geometry" />
+        <mxCell id="tl_rel_bg" value="" style="rounded=4;whiteSpace=wrap;html=1;fillColor=#f59e0b;strokeColor=none;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="1730" y="182" width="190" height="32" as="geometry" />
         </mxCell>
-        <mxCell id="r1_title" value="Sprint 1 Retrospective" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#ea580c;" vertex="1" parent="1">
-          <mxGeometry x="870" y="258" width="280" height="26" as="geometry" />
-        </mxCell>
-        <mxCell id="r1_went" value="👍 What went well" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#16a34a;" vertex="1" parent="1">
-          <mxGeometry x="870" y="290" width="280" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="r1_went_items" value="&amp;bull; Django + DRF scaffold was fast and clean&lt;br&gt;&amp;bull; 5-app modular structure kept code organised&lt;br&gt;&amp;bull; pgvector integration worked first try&lt;br&gt;&amp;bull; Seed data made manual testing easy" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#334155;" vertex="1" parent="1">
-          <mxGeometry x="870" y="312" width="285" height="55" as="geometry" />
-        </mxCell>
-        <mxCell id="r1_improve" value="🔧 To improve" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#dc2626;" vertex="1" parent="1">
-          <mxGeometry x="870" y="374" width="280" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="r1_improve_items" value="&amp;bull; Add request validation earlier in forms&lt;br&gt;&amp;bull; Start frontend scaffolding sooner&lt;br&gt;&amp;bull; Write API documentation alongside code" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#334155;" vertex="1" parent="1">
-          <mxGeometry x="870" y="396" width="285" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="r1_action" value="💡 Action items" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#2563eb;" vertex="1" parent="1">
-          <mxGeometry x="870" y="448" width="280" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="r1_action_items" value="&amp;bull; Set up Vite + React in Sprint 2 Day 1&lt;br&gt;&amp;bull; Add DRF schema docs (built-in)&lt;br&gt;&amp;bull; Pair-program the chatbot endpoint" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#334155;" vertex="1" parent="1">
-          <mxGeometry x="870" y="470" width="285" height="50" as="geometry" />
+        <mxCell id="tl_rel_label" value="★ RELEASE · Week 7" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=13;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1730" y="184" width="190" height="28" as="geometry" />
         </mxCell>
 
-        <!-- Retro Sprint 2 -->
-        <mxCell id="r2_box" value="" style="rounded=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#fed7aa;strokeWidth=1;arcSize=4;" vertex="1" parent="1">
-          <mxGeometry x="855" y="565" width="315" height="280" as="geometry" />
+        <!-- ==================== SPRINT 1 CARD ==================== -->
+        <mxCell id="s1_outer" value="" style="rounded=10;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#e2e8f0;strokeWidth=1;arcSize=6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="250" width="580" height="390" as="geometry" />
         </mxCell>
-        <mxCell id="r2_title" value="Sprint 2 Retrospective" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#ea580c;" vertex="1" parent="1">
-          <mxGeometry x="870" y="573" width="280" height="26" as="geometry" />
+        <!-- S1 Badge -->
+        <mxCell id="s1_badge" value="01" style="text;html=1;strokeColor=none;fillColor=#22c55e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=20;fontSize=20;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="110" y="270" width="44" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="r2_went" value="👍 What went well" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#16a34a;" vertex="1" parent="1">
-          <mxGeometry x="870" y="605" width="280" height="20" as="geometry" />
+        <mxCell id="s1_title" value="SPRINT 1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#5c6a7a;letterSpacing=2;" vertex="1" parent="1">
+          <mxGeometry x="165" y="270" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="r2_went_items" value="&amp;bull; React + Vite integration was smooth&lt;br&gt;&amp;bull; ChatWidget floating UI looks professional&lt;br&gt;&amp;bull; RAG pipeline (chunk → embed → search → generate) works end-to-end&lt;br&gt;&amp;bull; Fastembed model fits free-tier RAM perfectly" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#334155;" vertex="1" parent="1">
-          <mxGeometry x="870" y="627" width="285" height="55" as="geometry" />
+        <mxCell id="s1_weeks" value="Week 1 – 2" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#64748b;" vertex="1" parent="1">
+          <mxGeometry x="270" y="270" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="r2_improve" value="🔧 To improve" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#dc2626;" vertex="1" parent="1">
-          <mxGeometry x="870" y="689" width="280" height="20" as="geometry" />
+        <mxCell id="s1_name" value="Foundation &amp; Compliance Core" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="165" y="295" width="400" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="r2_improve_items" value="&amp;bull; Chatbot needs better error messages&lt;br&gt;&amp;bull; OpenRouter free tier is slow (~3s)&lt;br&gt;&amp;bull; Compliance page could use filtering&lt;br&gt;&amp;bull; CORS config was tricky — document it" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#334155;" vertex="1" parent="1">
-          <mxGeometry x="870" y="711" width="285" height="55" as="geometry" />
+        <!-- S1 Sprint Goal -->
+        <mxCell id="s1_goal_label" value="🎯 SPRINT GOAL" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#22c55e;letterSpacing=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="340" width="140" height="18" as="geometry" />
         </mxCell>
-        <mxCell id="r2_action" value="💡 Action items" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#2563eb;" vertex="1" parent="1">
-          <mxGeometry x="870" y="773" width="280" height="20" as="geometry" />
+        <mxCell id="s1_goal_text" value="Establish architecture, secure authentication and the compliance management engine." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#475569;" vertex="1" parent="1">
+          <mxGeometry x="110" y="358" width="530" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="r2_action_items" value="&amp;bull; Add loading skeleton + timeout handling&lt;br&gt;&amp;bull; Show &amp;quot;waking server…&amp;quot; for cold starts&lt;br&gt;&amp;bull; Write deployment guide for Phase 3" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#334155;" vertex="1" parent="1">
-          <mxGeometry x="870" y="795" width="285" height="40" as="geometry" />
+        <!-- S1 User Stories -->
+        <mxCell id="s1_us_label" value="📋 USER STORIES" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#22c55e;letterSpacing=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="395" width="140" height="18" as="geometry" />
         </mxCell>
-
-        <!-- Retro Sprint 3 -->
-        <mxCell id="r3_box" value="" style="rounded=6;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#fed7aa;strokeWidth=1;arcSize=4;" vertex="1" parent="1">
-          <mxGeometry x="855" y="880" width="315" height="280" as="geometry" />
+        <mxCell id="s1_us_text" value="• Compliance management dashboard&lt;br&gt;• Staff safety training module + quiz engine&lt;br&gt;• Incident reporting &amp;amp; tracking workflow&lt;br&gt;• Role-based access control (Staff / Admin)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#475569;" vertex="1" parent="1">
+          <mxGeometry x="110" y="414" width="530" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="r3_title" value="Sprint 3 Retrospective" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#ea580c;" vertex="1" parent="1">
-          <mxGeometry x="870" y="888" width="280" height="26" as="geometry" />
+        <!-- S1 Increment -->
+        <mxCell id="s1_inc_label" value="✅ INCREMENT" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#22c55e;letterSpacing=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="490" width="120" height="18" as="geometry" />
         </mxCell>
-        <mxCell id="r3_went" value="👍 What went well" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#16a34a;" vertex="1" parent="1">
-          <mxGeometry x="870" y="920" width="280" height="20" as="geometry" />
+        <mxCell id="s1_inc_text" value="MVP build: secure JWT auth, PostgreSQL+pgvector schema, compliance engine, training module, incident reporting form — all APIs functional." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#475569;" vertex="1" parent="1">
+          <mxGeometry x="110" y="508" width="530" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="r3_went_items" value="&amp;bull; All 3 free services deploy from 1 git push&lt;br&gt;&amp;bull; Render + Vercel auto-deploy pipeline works&lt;br&gt;&amp;bull; Supabase pgvector just works at 0 cost&lt;br&gt;&amp;bull; Final project is fully live and demo-ready" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#334155;" vertex="1" parent="1">
-          <mxGeometry x="870" y="942" width="285" height="55" as="geometry" />
+        <!-- S1 Outcome -->
+        <mxCell id="s1_outcome_bg" value="" style="rounded=6;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#bbf7d0;strokeWidth=1;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="110" y="570" width="530" height="48" as="geometry" />
         </mxCell>
-        <mxCell id="r3_improve" value="🔧 To improve" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#dc2626;" vertex="1" parent="1">
-          <mxGeometry x="870" y="1004" width="280" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="r3_improve_items" value="&amp;bull; Render cold start is annoying (~30s)&lt;br&gt;&amp;bull; OpenRouter free quota is limited&lt;br&gt;&amp;bull; No CI/CD tests — add GitHub Actions later" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#334155;" vertex="1" parent="1">
-          <mxGeometry x="870" y="1026" width="285" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="r3_action" value="💡 Action items" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#2563eb;" vertex="1" parent="1">
-          <mxGeometry x="870" y="1073" width="280" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="r3_action_items" value="&amp;bull; Add Render cron keep-alive (if supported)&lt;br&gt;&amp;bull; Consider upgrading OpenRouter to paid tier&lt;br&gt;&amp;bull; Document known limitations in README" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#334155;" vertex="1" parent="1">
-          <mxGeometry x="870" y="1095" width="285" height="55" as="geometry" />
+        <mxCell id="s1_outcome_text" value="📦 Outcome: Django backend live with 7 API endpoints. DB seeded. JWT auth verified. Ready for frontend integration." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#166534;" vertex="1" parent="1">
+          <mxGeometry x="122" y="578" width="506" height="32" as="geometry" />
         </mxCell>
 
-        <!-- ==================== BOTTOM: Methodology principles ==================== -->
-        <mxCell id="princ_bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f1f5f9;strokeColor=#e2e8f0;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="1470" width="1780" height="80" as="geometry" />
+        <!-- ==================== SPRINT 2 CARD ==================== -->
+        <mxCell id="s2_outer" value="" style="rounded=10;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#e2e8f0;strokeWidth=1;arcSize=6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="250" width="580" height="390" as="geometry" />
         </mxCell>
-        <mxCell id="princ_title" value="Agile Principles Applied" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1e293b;" vertex="1" parent="1">
-          <mxGeometry x="70" y="1480" width="220" height="28" as="geometry" />
+        <mxCell id="s2_badge" value="02" style="text;html=1;strokeColor=none;fillColor=#3b82f6;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=20;fontSize=20;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="720" y="270" width="44" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="p1" value="✓ Iterative delivery&lt;br&gt;across 3 sprints" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=8;fontSize=11;fontColor=#1e293b;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="70" y="1512" width="140" height="32" as="geometry" />
+        <mxCell id="s2_title" value="SPRINT 2" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#5c6a7a;letterSpacing=2;" vertex="1" parent="1">
+          <mxGeometry x="775" y="270" width="100" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="p2" value="✓ Sprint reviews with&lt;br&gt;working software" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=8;fontSize=11;fontColor=#1e293b;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="225" y="1512" width="150" height="32" as="geometry" />
+        <mxCell id="s2_weeks" value="Week 3 – 4" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#64748b;" vertex="1" parent="1">
+          <mxGeometry x="880" y="270" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="p3" value="✓ Retrospectives drive&lt;br&gt;continuous improvement" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=8;fontSize=11;fontColor=#1e293b;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="390" y="1512" width="160" height="32" as="geometry" />
+        <mxCell id="s2_name" value="Integration &amp; Intelligence" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="775" y="295" width="400" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="p4" value="✓ Backlog prioritised&lt;br&gt;by business value" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=8;fontSize=11;fontColor=#1e293b;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="565" y="1512" width="150" height="32" as="geometry" />
+        <mxCell id="s2_goal_label" value="🎯 SPRINT GOAL" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#3b82f6;letterSpacing=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="340" width="140" height="18" as="geometry" />
         </mxCell>
-        <mxCell id="p5" value="✓ Cross-functional&lt;br&gt;team collaboration" style="text;html=1;strokeColor=none;fillColor=#ffffff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=8;fontSize=11;fontColor=#1e293b;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="730" y="1512" width="150" height="32" as="geometry" />
+        <mxCell id="s2_goal_text" value="Build the React SPA and integrate the RAG chatbot with Llama 4 Maverick for intelligent safety Q&amp;amp;A." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#475569;" vertex="1" parent="1">
+          <mxGeometry x="720" y="358" width="530" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_us_label" value="📋 USER STORIES" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#3b82f6;letterSpacing=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="395" width="140" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_us_text" value="• React SPA with login, dashboard &amp;amp; sidebar navigation&lt;br&gt;• Training modules with quiz submission &amp;amp; scoring&lt;br&gt;• Compliance status dashboard with real-time badges&lt;br&gt;• RAG chatbot (fastembed + pgvector + OpenRouter Llama 4)&lt;br&gt;• Floating chat widget with source citations&lt;br&gt;• Document ingestion pipeline for compliance knowledge base" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#475569;" vertex="1" parent="1">
+          <mxGeometry x="720" y="414" width="530" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_inc_label" value="✅ INCREMENT" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#3b82f6;letterSpacing=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="490" width="120" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_inc_text" value="Full-stack app: React SPA ↔ Django API. RAG chatbot answers healthcare safety questions with sourced citations. All 5 pages live." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#475569;" vertex="1" parent="1">
+          <mxGeometry x="720" y="508" width="530" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_outcome_bg" value="" style="rounded=6;whiteSpace=wrap;html=1;fillColor=#eff6ff;strokeColor=#bfdbfe;strokeWidth=1;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="720" y="570" width="530" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="s2_outcome_text" value="📦 Outcome: Full-stack running locally. Full demo walkthrough works. RAG pipeline operational with fallback handling." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#1e40af;" vertex="1" parent="1">
+          <mxGeometry x="732" y="578" width="506" height="32" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== SPRINT 3 CARD ==================== -->
+        <mxCell id="s3_outer" value="" style="rounded=10;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#e2e8f0;strokeWidth=1;arcSize=6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="700" width="580" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_badge" value="03" style="text;html=1;strokeColor=none;fillColor=#8b5cf6;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=20;fontSize=20;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="110" y="720" width="44" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_title" value="SPRINT 3" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#5c6a7a;letterSpacing=2;" vertex="1" parent="1">
+          <mxGeometry x="165" y="720" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_weeks" value="Week 5 – 6" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#64748b;" vertex="1" parent="1">
+          <mxGeometry x="270" y="720" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_name" value="Hardening &amp; Release Readiness" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="165" y="745" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_goal_label" value="🎯 SPRINT GOAL" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#8b5cf6;letterSpacing=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="790" width="140" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_goal_text" value="Deploy the system live, conduct security &amp;amp; UAT testing, and polish the UI for submission readiness." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#475569;" vertex="1" parent="1">
+          <mxGeometry x="110" y="808" width="530" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_us_label" value="📋 USER STORIES" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#8b5cf6;letterSpacing=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="845" width="140" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_us_text" value="• Cloud deployment (Render + Vercel + Supabase)&lt;br&gt;• API endpoint validation &amp;amp; CORS configuration&lt;br&gt;• End-to-end user flow testing (all 5 pages)&lt;br&gt;• UI polish: loading states, error handling, responsive layout&lt;br&gt;• RAG retrieval accuracy evaluation" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#475569;" vertex="1" parent="1">
+          <mxGeometry x="110" y="864" width="530" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_inc_label" value="✅ INCREMENT" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#8b5cf6;letterSpacing=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="935" width="120" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_inc_text" value="Release-ready build: live on Vercel+Render, Supabase pgvector operational, RAG chatbot returns sourced answers, UI polished &amp;amp; tested." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#475569;" vertex="1" parent="1">
+          <mxGeometry x="110" y="953" width="530" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_outcome_bg" value="" style="rounded=6;whiteSpace=wrap;html=1;fillColor=#faf5ff;strokeColor=#e9d5ff;strokeWidth=1;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1020" width="530" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="s3_outcome_text" value="📦 Outcome: Live deployed system. Full user journey works in browser. RAG chatbot returns sourced answers. Project submission ready." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#6d28d9;" vertex="1" parent="1">
+          <mxGeometry x="122" y="1028" width="506" height="32" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== RELEASE CARD ==================== -->
+        <mxCell id="rel_outer" value="" style="rounded=10;whiteSpace=wrap;html=1;fillColor=#fffbeb;strokeColor=#fcd34d;strokeWidth=2;arcSize=6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="700" width="580" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_badge" value="★" style="text;html=1;strokeColor=none;fillColor=#f59e0b;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=20;fontSize=24;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="720" y="720" width="44" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_title" value="RELEASE" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#5c6a7a;letterSpacing=2;" vertex="1" parent="1">
+          <mxGeometry x="775" y="720" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_weeks" value="Week 7" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#64748b;" vertex="1" parent="1">
+          <mxGeometry x="880" y="720" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_name" value="Deploy, Train &amp; Retrospect" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="775" y="745" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_focus_label" value="🎯 FOCUS AREAS" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#d97706;letterSpacing=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="795" width="140" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_focus_text" value="• Production cloud deployment (Render + Vercel + Supabase)&lt;br&gt;• User training &amp;amp; documentation (README, deploy guide)&lt;br&gt;• Stakeholder demo &amp;amp; sign-off&lt;br&gt;• Project retrospective &amp;amp; closure&lt;br&gt;• Final GitHub repository polish &amp;amp; submission" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#475569;" vertex="1" parent="1">
+          <mxGeometry x="720" y="816" width="530" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_deliv_label" value="🏆 FINAL DELIVERABLE" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#d97706;letterSpacing=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="935" width="180" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_deliv_text" value="Live, compliant &amp; supported healthcare safety system — deployed, documented, and demo-ready." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#475569;" vertex="1" parent="1">
+          <mxGeometry x="720" y="953" width="530" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_outcome_bg" value="" style="rounded=6;whiteSpace=wrap;html=1;fillColor=#fffbeb;strokeColor=#fde68a;strokeWidth=2;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="720" y="1020" width="530" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_outcome_text" value="🏆 Final: Live system on Vercel + Render + Supabase. RAG chatbot operational. All docs published on GitHub. Project complete." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#92400e;" vertex="1" parent="1">
+          <mxGeometry x="732" y="1028" width="506" height="32" as="geometry" />
+        </mxCell>
+
+        <!-- ==================== SCRUM CYCLE SECTION ==================== -->
+        <mxCell id="cycle_bg" value="" style="rounded=10;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#e2e8f0;strokeWidth=1;arcSize=6;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1140" width="1840" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="cycle_header" value="What Happens Inside Every Sprint — The Scrum Cycle" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;fontStyle=1;fontColor=#334155;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1150" width="1840" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="cycle_sub" value="The same four ceremonies run every 2 weeks for Sprint 1, 2 and 3" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#64748b;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1178" width="1840" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Ceremony 1 -->
+        <mxCell id="cer1_bg" value="" style="rounded=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#e2e8f0;strokeWidth=1;arcSize=6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="1215" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cer1_num" value="1" style="text;html=1;strokeColor=none;fillColor=#22c55e;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=14;fontSize=13;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="155" y="1230" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="cer1_name" value="Sprint Planning" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="190" y="1228" width="200" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="cer1_desc" value="Pick user stories &amp; define the sprint goal" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#64748b;" vertex="1" parent="1">
+          <mxGeometry x="190" y="1254" width="290" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Ceremony 2 -->
+        <mxCell id="cer2_bg" value="" style="rounded=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#e2e8f0;strokeWidth=1;arcSize=6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="1215" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cer2_num" value="2" style="text;html=1;strokeColor=none;fillColor=#3b82f6;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=14;fontSize=13;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="555" y="1230" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="cer2_name" value="Daily Standup" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="590" y="1228" width="200" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="cer2_desc" value="Daily 15-min sync on progress &amp; blockers" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#64748b;" vertex="1" parent="1">
+          <mxGeometry x="590" y="1254" width="290" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Ceremony 3 -->
+        <mxCell id="cer3_bg" value="" style="rounded=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#e2e8f0;strokeWidth=1;arcSize=6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="1215" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cer3_num" value="3" style="text;html=1;strokeColor=none;fillColor=#8b5cf6;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=14;fontSize=13;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="955" y="1230" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="cer3_name" value="Sprint Review" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="990" y="1228" width="200" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="cer3_desc" value="Demo the increment &amp; collect stakeholder feedback" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#64748b;" vertex="1" parent="1">
+          <mxGeometry x="990" y="1254" width="290" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Ceremony 4 -->
+        <mxCell id="cer4_bg" value="" style="rounded=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#e2e8f0;strokeWidth=1;arcSize=6;shadow=1;" vertex="1" parent="1">
+          <mxGeometry x="1340" y="1215" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cer4_num" value="4" style="text;html=1;strokeColor=none;fillColor=#f59e0b;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=14;fontSize=13;fontStyle=1;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="1355" y="1230" width="24" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="cer4_name" value="Retrospective" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="1228" width="200" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="cer4_desc" value="Reflect, improve &amp; loop back to planning" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#64748b;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="1254" width="290" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Cycle arrow -->
+        <mxCell id="cycle_arrow_text" value="Repeat every 2 weeks  ↻" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#94a3b8;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="1720" y="1228" width="160" height="24" as="geometry" />
         </mxCell>
 
         <!-- ==================== FOOTER ==================== -->
         <mxCell id="footer_line" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=#cbd5e1;" vertex="1" parent="1">
-          <mxGeometry x="40" y="1570" width="1780" height="2" as="geometry" />
+          <mxGeometry x="80" y="1350" width="1840" height="2" as="geometry" />
         </mxCell>
-        <mxCell id="footer" value="Group W &amp;nbsp · &amp;nbsp Agile Scrum SDLC Diagram &amp;nbsp · &amp;nbsp Total Timeline: 6 Weeks &amp;nbsp · &amp;nbsp 2026" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#94a3b8;" vertex="1" parent="1">
-          <mxGeometry x="40" y="1576" width="1780" height="24" as="geometry" />
+        <mxCell id="footer_text" value="© Group W &amp;nbsp · &amp;nbsp Agile / Scrum Project Plan &amp;nbsp · &amp;nbsp Total Timeline: 7 Weeks &amp;nbsp · &amp;nbsp 2026" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#94a3b8;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1360" width="1840" height="22" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -4,7 +4,7 @@
 **Group:** W  
 **Team:** Abu Sufian · Xiao Liang  
 **Methodology:** Agile Scrum  
-**Duration:** 6 Weeks (3 Sprints of 2 weeks each)
+**Duration:** 7 Weeks (3 Sprints × 2 Weeks + 1 Release Week)
 
 ---
 
@@ -17,7 +17,20 @@ deliverables, sprint reviews, and retrospectives.
 Agile was chosen because the project integrates multiple unfamiliar technologies
 (Django, React, pgvector, RAG, OpenRouter, free cloud deployment) where
 requirements may evolve as we learn. Delivering working software every 2 weeks
-reduces integration risk.
+reduces integration risk. The 7th week is reserved for final deployment, user
+training, stakeholder demo, and project retrospective.
+
+---
+
+## Timeline
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│  Sprint 1         Sprint 2         Sprint 3         ★ Release          │
+│  Week 1–2         Week 3–4         Week 5–6         Week 7             │
+│  Foundation       Integration      Hardening        Deploy & Close     │
+└─────────────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -244,6 +257,20 @@ Live deployed system accessible via public URLs:
 
 ---
 
+## Release Week 7: Deploy, Train &amp; Retrospect
+
+**Focus Areas:**
+
+- **Production cloud deployment** — Render (Django + Gunicorn), Vercel (React SPA), Supabase (PostgreSQL + pgvector)
+- **User training &amp; documentation** — README, deployment guide, .env.example for all services
+- **Stakeholder demo &amp; sign-off** — Live walkthrough of the full user journey
+- **Project retrospective &amp; closure** — Lessons learned, what worked, what to improve
+- **Final GitHub repository polish** — Clean commits, consistent naming, all docs linked
+
+**Final Deliverable:** Live, compliant &amp; supported healthcare safety system — deployed, documented, and demo-ready.
+
+---
+
 ## Project Outcomes
 
 | Outcome | Evidence |
@@ -273,9 +300,10 @@ Live deployed system accessible via public URLs:
 
 | Aspect | Waterfall (Activity 1) | Agile Scrum (This Activity) |
 |---|---|---|
-| Phases | 6 sequential phases | 3 iterative sprints |
+| Phases | 6 sequential phases (Waterfall) | 3 Sprints + 1 Release Week (Agile) |
 | Feedback | After all 6 phases complete | After every 2-week sprint |
 | Documentation | Heavy upfront (SRS, Design Doc) | Light, just-in-time (this README) |
 | Risk | Integration risks accumulate until Testing | Integration risks caught in Sprint 1 |
 | Best for | Regulated environments, fixed requirements | Evolving requirements, learning new tech |
-| Our project | Used as the SDLC framework (planning doc) | Used as the actual execution method (building code) |
+| Timeline | 7 Weeks, 6 phases | 7 Weeks, 3 sprints + release |
+| Our project | Used as the SDLC framework (planning) | Used as the execution method (building code) |
