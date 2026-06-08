@@ -1,8 +1,8 @@
 """
 IoT Smart Office — Device Classes (Product hierarchy)
 
-All three smart devices inherit from the abstract Device base class.
-Each subclass adds device-specific control methods and state.
+All devices inherit from Device(ABC). IDs are auto-assigned by the system.
+Each subclass implements device-specific state and control methods.
 """
 
 from abc import ABC, abstractmethod
@@ -11,37 +11,42 @@ from abc import ABC, abstractmethod
 class Device(ABC):
     """Abstract base class for all smart office devices."""
 
-    def __init__(self, device_id, location):
-        self.device_id = device_id
+    def __init__(self, location):
         self.location = location
         self.power = "OFF"
 
+    def assign_id(self, n):
+        """Called by main() after the device is created."""
+        self._id = n
+
+    @property
+    def device_id(self):
+        return self._id
+
     @abstractmethod
     def device_type(self):
-        """Return the human-readable type of this device."""
+        """Return the human-readable type name."""
 
     @abstractmethod
     def detail(self):
-        """Return the device-specific state string for the Status column."""
+        """Return the Status column value."""
 
     def turn_on(self):
         self.power = "ON"
-        print(f"  {self.device_type()} {self.device_id} turned ON.")
+        print(f"  {self.device_type()} [ID {self._id}] turned ON.")
 
     def turn_off(self):
         self.power = "OFF"
-        print(f"  {self.device_type()} {self.device_id} turned OFF.")
+        print(f"  {self.device_type()} [ID {self._id}] turned OFF.")
 
     @abstractmethod
     def adjust_setting(self):
-        """Prompt user to adjust the device-specific setting."""
+        """Prompt user to set the device-specific value."""
 
 
 class SmartSwitch(Device):
-    """Smart light switch."""
-
-    def __init__(self, device_id, location):
-        super().__init__(device_id, location)
+    def __init__(self, location):
+        super().__init__(location)
         self._on = False
 
     def device_type(self):
@@ -53,12 +58,12 @@ class SmartSwitch(Device):
     def turn_on(self):
         self.power = "ON"
         self._on = True
-        print(f"  Smart Switch {self.device_id} turned ON.")
+        print(f"  Smart Switch [ID {self._id}] turned ON.")
 
     def turn_off(self):
         self._on = False
         self.power = "OFF"
-        print(f"  Smart Switch {self.device_id} turned OFF.")
+        print(f"  Smart Switch [ID {self._id}] turned OFF.")
 
     def adjust_setting(self):
         if self._on:
@@ -68,10 +73,8 @@ class SmartSwitch(Device):
 
 
 class SmartCurtain(Device):
-    """Smart curtain with percentage control."""
-
-    def __init__(self, device_id, location):
-        super().__init__(device_id, location)
+    def __init__(self, location):
+        super().__init__(location)
         self.position = 0
 
     def device_type(self):
@@ -82,28 +85,26 @@ class SmartCurtain(Device):
 
     def turn_on(self):
         self.power = "ON"
-        print(f"  Smart Curtain {self.device_id} turned ON.")
+        print(f"  Smart Curtain [ID {self._id}] turned ON.")
 
     def turn_off(self):
         self.power = "OFF"
-        print(f"  Smart Curtain {self.device_id} turned OFF.")
+        print(f"  Smart Curtain [ID {self._id}] turned OFF.")
 
     def adjust_setting(self):
         try:
-            val = int(input(f"  Enter curtain position (0-100): ").strip())
+            val = int(input("  Enter curtain position (0-100): ").strip())
             val = max(0, min(100, val))
             self.position = val
             self.power = "ON" if val > 0 else "OFF"
-            print(f"  Smart Curtain {self.device_id} set to {val}%.")
+            print(f"  Smart Curtain [ID {self._id}] set to {val}%.")
         except ValueError:
             print("  Invalid input.")
 
 
 class SmartLock(Device):
-    """Smart door lock."""
-
-    def __init__(self, device_id, location):
-        super().__init__(device_id, location)
+    def __init__(self, location):
+        super().__init__(location)
         self._locked = True
 
     def device_type(self):
@@ -112,21 +113,21 @@ class SmartLock(Device):
     def detail(self):
         return "Locked" if self._locked else "Unlocked"
 
+    def lock(self):
+        self._locked = True
+        self.power = "ON"
+        print(f"  Smart Lock [ID {self._id}] locked.")
+
+    def unlock(self):
+        self._locked = False
+        self.power = "OFF"
+        print(f"  Smart Lock [ID {self._id}] unlocked.")
+
     def turn_on(self):
         self.lock()
 
     def turn_off(self):
         self.unlock()
-
-    def lock(self):
-        self._locked = True
-        self.power = "ON"
-        print(f"  Smart Lock {self.device_id} locked.")
-
-    def unlock(self):
-        self._locked = False
-        self.power = "OFF"
-        print(f"  Smart Lock {self.device_id} unlocked.")
 
     def adjust_setting(self):
         if self._locked:

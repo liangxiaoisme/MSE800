@@ -20,12 +20,12 @@ class DeviceFactory:
         cls._registry[type_name.lower()] = device_class
 
     @classmethod
-    def create(cls, type_name, device_id, location):
+    def create(cls, type_name, location):
         """Create and return a device instance, or None if type is unknown."""
         device_class = cls._registry.get(type_name.lower())
         if device_class is None:
             return None
-        return device_class(device_id, location)
+        return device_class(location)
 
     @classmethod
     def available_types(cls):
