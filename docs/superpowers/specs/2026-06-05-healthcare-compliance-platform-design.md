@@ -13,7 +13,7 @@ deployed, runnable, breadth over depth for a course capstone submission.
 
 ```
 Browser ──────────►  Vercel (React SPA, Vite)
-                          │  HTTPS + JWT
+                          │  HTTPS + JWThttps://vscode.dev/github/liangxiaoisme/MSE800/blob/main/docs/superpowers/specs/2026-06-05-healthcare-compliance-platform-design.md
                           ▼
                      Render (Django + DRF REST API)
                           │
