@@ -8,6 +8,16 @@
 
 ---
 
+## Agile Lifecycle Diagram
+
+Generated with `baoyu-skills:baoyu-diagram` — shows 3 sprints, Scrum ceremonies, user stories, and sprint increments.
+
+![Agile Lifecycle Diagram](diagram/agile-lifecycle@2x.png)
+
+> SVG source: [diagram/agile-lifecycle.svg](diagram/agile-lifecycle.svg)
+
+---
+
 ## Overview
 
 This document records the Agile project management plan for the Healthcare
